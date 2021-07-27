@@ -17,14 +17,14 @@
         android:layout_height="70dp"
         android:layout_gravity="center"
         android:textSize="25sp"
-        android:text="@string/input_id"
+        android:text="@string/in_id"
         android:background="@drawable/edit_radius"/>
     <EditText
         android:layout_width="270dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="@string/input_pass"
+        android:text="@string/in_pass"
         android:textSize="25sp"
         android:background="@drawable/edit_radius"/>
     <Button
