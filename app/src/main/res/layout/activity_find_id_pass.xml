@@ -2,8 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#FFC845">
+    android:background="#FFC845"
+    tools:context=".MainActivity">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,15 +20,17 @@
         android:text="@string/in_email"
         android:textStyle="bold"
         android:background="@drawable/edit_radius"/>
-    <Button
+    <TextView
         android:layout_width="270dp"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
+        android:gravity="center"
         android:text="확인"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:background="@drawable/edit_radius"/>
+        android:background="@drawable/btn_radius"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,14 +54,15 @@
         android:text="@string/in_email"
         android:textStyle="bold"
         android:background="@drawable/edit_radius"/>
-    <Button
+    <TextView
         android:layout_width="270dp"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
+        android:gravity="center"
         android:text="확인"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:background="@drawable/edit_radius"/>
+        android:background="@drawable/btn_radius"/>
 
 </LinearLayout>
