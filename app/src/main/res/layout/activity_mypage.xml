@@ -11,119 +11,120 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:src="@drawable/title"/>
-<!--    <ImageButton-->
-<!--        android:layout_width="30dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:src="@drawable/setting"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:layout_gravity="right"-->
-<!--        android:layout_marginRight="30dp"-->
-<!--        android:background="@drawable/radius"/>-->
-    <TableLayout
+    <LinearLayout
         android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/radius"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TableRow
+        android:layout_height="300dp">
+        <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="@drawable/radius"
-                android:text="Mypage"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#5B5B5B"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/radius"
-                android:drawableRight="@drawable/setting"
-                android:layout_gravity="right"
-                android:layout_marginLeft="100dp"
-                android:textColor="#3E3E3E"/>
-        </TableRow>
-    </TableLayout>
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TableRow
-            android:id="@+id/row_1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:padding="32dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:drawableLeft="@drawable/cat"
-                android:background="@drawable/radius">
-            </TextView>
-        </TableRow>
-        <TableRow  android:padding="10dp"
-            android:layout_marginTop="10dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_weight="1"
-                android:background="@drawable/radius"
-                android:padding="32dp"
-                android:textColor="#0067A3"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:gravity="center"
-                android:text="X 50"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:drawableLeft= "@drawable/likes"/>
-            <TextView
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
                 android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/radius"
-                android:padding="32dp"
-                android:textColor="#000"
-                android:layout_marginRight="10dp"
-                android:text="Lv.1"
-                android:layout_gravity="center"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:drawableBottom= "@drawable/medal" />
-        </TableRow>
-        <TableRow android:padding = "10dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/radius"
-                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/mypage"/>
+            <ImageButton
                 android:layout_marginTop="10dp"
-                android:text="쿠폰 등록 하러 가기"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:textColor="#000" />
-        </TableRow>
-        <TableRow android:padding = "10dp">
+                android:id="@+id/btn_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/radius"
+                android:src="@drawable/setting"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingRight="230dp"
+                android:src="@drawable/cat"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="이름"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/radius"
-                android:gravity="center"
-                android:text="전체 랭킹 보러 가기"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:textColor="#000" />
-        </TableRow>
-    </TableLayout>
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="소개글을 입력해주세요"
+                android:backgroundTint="#CFCFCF"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:paddingLeft="30dp"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/likes"
+            android:text=" X 50"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#0067A3"
+            android:background="@drawable/radius">
+        </TextView>
+        <ImageView
+            android:tooltipText=""
+            android:paddingTop="35dp"
+            android:paddingBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/medal"
+            android:background="@drawable/radius"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/radius"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="쿠폰 등록 하러 가기"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/radius"
+            android:gravity="center"
+            android:text="전체 랭킹 보러 가기"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
 </LinearLayout>
