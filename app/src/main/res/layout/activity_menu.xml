@@ -46,12 +46,12 @@
                 android:layout_width="150dp"
                 android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/subsnack"
+                android:src="@drawable/menu_best"
                 android:background="#FFC845"/>
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/mainsnack"
+                android:src="@drawable/menu_comment"
                 android:background="#FFC845"/>
         </LinearLayout>
         <LinearLayout
@@ -63,12 +63,12 @@
                 android:layout_width="150dp"
                 android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/recipebook"
+                android:src="@drawable/menu_recipe"
                 android:background="#FFC845"/>
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/timer"
+                android:src="@drawable/menu_timer"
                 android:background="#FFC845"/>
         </LinearLayout>
     </LinearLayout>
