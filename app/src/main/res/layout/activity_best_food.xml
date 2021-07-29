@@ -20,7 +20,7 @@
         android:layout_gravity="right"
         android:background="@color/limpidity"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/home"/>
     <ScrollView
         android:layout_width="match_parent"
