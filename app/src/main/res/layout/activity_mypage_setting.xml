@@ -81,13 +81,4 @@
             android:background="@drawable/btn_radius"
             android:text="취소" />
     </LinearLayout>
-
-
-
-
-
-
-
-
-
 </LinearLayout>
