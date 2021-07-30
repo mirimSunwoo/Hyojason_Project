@@ -26,13 +26,20 @@
         android:queryHint="음식을 입력하세요"
         android:searchIcon="@drawable/search"
         android:iconifiedByDefault="false"/>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/review_radius">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="60sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:textColor="#000000"
         android:text="@string/no"/>
     <TextView
@@ -67,5 +74,6 @@
         android:layout_marginTop="30dp"
         android:textColor="#000000"
         android:gravity="center"/>
+    </LinearLayout>
 
 </LinearLayout>
