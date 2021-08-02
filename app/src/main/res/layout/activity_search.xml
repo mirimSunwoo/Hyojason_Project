@@ -8,18 +8,27 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#FFC845"
-        android:src="@drawable/title"/>
-    <SearchView
-        android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/title"
+        android:background="#FFC845"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/radius"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/home"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="49dp"
         android:gravity="center"
-        android:queryHint="음식을 입력하세요"
-        android:searchIcon="@drawable/search"
-        android:iconifiedByDefault="false"/>
+        android:drawableRight="@drawable/search"
+        android:text="음식을 입력하세요" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -30,7 +39,7 @@
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="60dp"
             android:textSize="20sp"
             android:textColor="#000000"
             android:text="#두부"/>

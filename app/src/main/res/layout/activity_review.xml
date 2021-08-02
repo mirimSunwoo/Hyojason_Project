@@ -28,7 +28,7 @@
         android:iconifiedByDefault="false"/>
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="550dp"
+        android:layout_height="570dp"
         android:background="@drawable/review_radius"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
@@ -46,22 +46,23 @@
                 android:text="삼계탕"
                 android:textSize="30dp"
                 android:textColor="#000000"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"/>
             <RatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:numStars="5"
-                android:rating="3"
-                android:stepSize="3"
-            android:layout_marginLeft="40dp"/>
+                style="?android:attr/ratingBarStyleIndicator"
+                android:rating="3.5"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="맛있어요!"
+                android:text="삼계탕 사랑해요!"
                 android:textSize="20dp"
                 android:textColor="#000000"
-                android:layout_marginLeft="40dp"/>
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"/>
         </LinearLayout>
             <LinearLayout
                 android:layout_width="300dp"
@@ -76,27 +77,28 @@
                     android:text="삼계탕"
                     android:textSize="30dp"
                     android:textColor="#000000"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"/>
                 <RatingBar
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:numStars="5"
-                    android:rating="3"
-                    android:stepSize="3"
-                    android:layout_marginLeft="40dp"/>
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:rating="3.5"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="맛있어요!"
+                    android:text="삼계탕 너무 맛있어요!"
                     android:textSize="20dp"
                     android:textColor="#000000"
-                    android:layout_marginLeft="40dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"/>
         </LinearLayout>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="140dp"
                 android:src="@drawable/plus"/>
 
     </LinearLayout>
