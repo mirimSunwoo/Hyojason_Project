@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnStart = findViewById(R.id.btn_start);
         btnStart.setOnClickListener(btnListener);
-
     }
     View.OnClickListener btnListener = new View.OnClickListener() {
         @Override
