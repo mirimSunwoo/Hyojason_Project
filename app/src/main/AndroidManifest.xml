@@ -19,6 +19,12 @@
         <activity android:name=".JoinActivity"/>
         <activity android:name=".FindActivity"/>
         <activity android:name=".ListViewActivity"/>
-
+        <activity android:name=".MyPageActivity"/>
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".BestActivity"/>
+        <activity android:name=".SearchActivity"/>
+        <activity android:name=".RecipeActivity"/>
+        <activity android:name=".TimerActivity"/>
+        <activity android:name=".ReviewActivity"/>
     </application>
 </manifest>
