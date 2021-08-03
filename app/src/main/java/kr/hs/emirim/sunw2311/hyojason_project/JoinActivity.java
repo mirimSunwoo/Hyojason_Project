@@ -19,15 +19,25 @@ public class JoinActivity extends AppCompatActivity {
         ActionBar abar = getSupportActionBar();
         abar.hide();
 
-        TextView textJoin;
+        TextView textJoin, textList;
 
         textJoin = findViewById(R.id.text_join);
+        textList = findViewById(R.id.list_check);
         textJoin.setOnClickListener(btnListener);
+        textList.setOnClickListener(listListener);
     }
     View.OnClickListener btnListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    };
+    View.OnClickListener listListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), ListViewActivity.class);
             startActivity(intent);
             finish();
         }

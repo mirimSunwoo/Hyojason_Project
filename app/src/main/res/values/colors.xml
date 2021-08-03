@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FFC845</color>
     <color name="limpidity">#00000000</color>
+    <color name="gray">#C3C1C1</color>
 </resources>
