@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
-    Button btnJoin, btnFind;
+    Button btnJoin;
+    TextView textFind;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +22,10 @@ public class LoginActivity extends AppCompatActivity {
         abar.hide();
 
         btnJoin = findViewById(R.id.btn_join);
-        btnFind = findViewById(R.id.btn_find);
+        textFind = findViewById(R.id.text_find);
 
         btnJoin.setOnClickListener(btnListener);
-        btnFind.setOnClickListener(btnListener1);
+        textFind.setOnClickListener(btnListener1);
     }
 
     View.OnClickListener btnListener = new View.OnClickListener() {
