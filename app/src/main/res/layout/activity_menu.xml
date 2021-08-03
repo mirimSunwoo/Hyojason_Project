@@ -23,6 +23,7 @@
         android:layout_marginTop="10dp"
         android:src="@drawable/home"/>
     <EditText
+        android:id="@+id/btn_menu_search"
         android:layout_marginTop="30dp"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -43,12 +44,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageButton
+                android:id="@+id/btn_menu_best"
                 android:layout_width="150dp"
                 android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/menu_best"
                 android:background="#FFC845"/>
             <ImageButton
+                android:id="@+id/btn_menu_review"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/menu_comment"
@@ -60,12 +63,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageButton
+                android:id="@+id/btn_menu_recipe"
                 android:layout_width="150dp"
                 android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/menu_recipe"
                 android:background="#FFC845"/>
             <ImageButton
+                android:id="@+id/btn_menu_timer"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/menu_timer"
