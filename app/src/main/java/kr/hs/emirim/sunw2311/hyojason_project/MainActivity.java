@@ -1,5 +1,6 @@
 package kr.hs.emirim.sunw2311.hyojason_project;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBar abar = getSupportActionBar();
+        abar.hide();
 
         btnStart = findViewById(R.id.btn_start);
         btnStart.setOnClickListener(btnListener);
