@@ -16,7 +16,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:src="@drawable/title"/>
+
     </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_review_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/radius"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/home"/>
     <SearchView
         android:layout_width="340dp"
         android:layout_height="wrap_content"
@@ -28,7 +38,7 @@
         android:iconifiedByDefault="false"/>
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="570dp"
+        android:layout_height="530dp"
         android:background="@drawable/review_radius"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
@@ -98,7 +108,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="100dp"
                 android:src="@drawable/plus"/>
 
     </LinearLayout>
