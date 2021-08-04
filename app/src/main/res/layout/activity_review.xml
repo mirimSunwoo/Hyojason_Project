@@ -17,10 +17,18 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/title"/>
     </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_recipe_home"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:background="@color/limpidity"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/home"/>
     <SearchView
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="15dp"
         android:gravity="center"
         android:queryHint="음식을 입력하세요"
@@ -28,7 +36,7 @@
         android:iconifiedByDefault="false"/>
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="570dp"
+        android:layout_height="550dp"
         android:background="@drawable/review_radius"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
@@ -98,7 +106,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="120dp"
                 android:src="@drawable/plus"/>
 
     </LinearLayout>
