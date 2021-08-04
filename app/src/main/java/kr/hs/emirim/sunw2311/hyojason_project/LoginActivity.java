@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
     Button btnJoin;
-    TextView textFind;
+    TextView textFind, textLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +23,11 @@ public class LoginActivity extends AppCompatActivity {
 
         btnJoin = findViewById(R.id.btn_join);
         textFind = findViewById(R.id.text_find);
+        textLogin = findViewById(R.id.text_login);
 
         btnJoin.setOnClickListener(btnListener);
         textFind.setOnClickListener(btnListener1);
+        textLogin.setOnClickListener(btnMenuListener);
     }
 
     View.OnClickListener btnListener = new View.OnClickListener() {
@@ -40,6 +42,14 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), FindActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    };
+    View.OnClickListener btnMenuListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
             startActivity(intent);
             finish();
         }
