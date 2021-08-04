@@ -22,9 +22,11 @@
         <activity android:name=".MyPageActivity"/>
         <activity android:name=".MenuActivity"/>
         <activity android:name=".BestActivity"/>
+        <activity android:name=".BestExActivity"/>
         <activity android:name=".SearchActivity"/>
         <activity android:name=".RecipeActivity"/>
         <activity android:name=".TimerActivity"/>
         <activity android:name=".ReviewActivity"/>
+        <activity android:name=".RecipeExActivity"/>
     </application>
 </manifest>
