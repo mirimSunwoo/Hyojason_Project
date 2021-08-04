@@ -15,6 +15,7 @@
         android:background="@color/orange"/>
 
     <ImageButton
+        android:id="@+id/btn_best_home"
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_gravity="right"
@@ -160,6 +161,7 @@
                         android:gravity="center"
                         android:text="파프리카"/>
                     <TextView
+                        android:id="@+id/text_paprika"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
