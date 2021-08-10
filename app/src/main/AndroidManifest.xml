@@ -27,5 +27,7 @@
         <activity android:name=".TimerActivity"/>
         <activity android:name=".ReviewActivity"/>
         <activity android:name=".RecipeExActivity"/>
+        <activity android:name=".MypageActivity"/>
+        <activity android:name="MypageSettingActivity"/>
     </application>
 </manifest>
