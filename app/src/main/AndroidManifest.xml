@@ -18,7 +18,6 @@
         <activity android:name=".JoinActivity"/>
         <activity android:name=".FindActivity"/>
         <activity android:name=".ListViewActivity"/>
-        <activity android:name=".MyPageActivity"/>
         <activity android:name=".MenuActivity"/>
         <activity android:name=".BestActivity"/>
         <activity android:name=".BestExActivity"/>
@@ -27,5 +26,7 @@
         <activity android:name=".TimerActivity"/>
         <activity android:name=".ReviewActivity"/>
         <activity android:name=".RecipeExActivity"/>
+        <activity android:name=".MypageActivity"/>
+        <activity android:name="MypageSettingActivity"/>
     </application>
 </manifest>

@@ -5,7 +5,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MyPageActivity extends AppCompatActivity {
+public class MypageActivity extends AppCompatActivity {
     Button MyPagebtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
