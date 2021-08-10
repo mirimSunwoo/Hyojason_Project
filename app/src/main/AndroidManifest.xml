@@ -9,13 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hyojason_Project">
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"/>
         <activity android:name=".JoinActivity"/>
         <activity android:name=".FindActivity"/>
         <activity android:name=".ListViewActivity"/>

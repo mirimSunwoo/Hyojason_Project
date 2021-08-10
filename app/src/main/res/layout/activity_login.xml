@@ -13,6 +13,7 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/animal"/>
     <EditText
+        android:id="@+id/id_input"
         android:layout_width="340dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
@@ -22,6 +23,7 @@
         android:textColor="@color/gray"
         android:background="@drawable/edit_radius"/>
     <EditText
+        android:id="@+id/pass_input"
         android:layout_width="340dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
