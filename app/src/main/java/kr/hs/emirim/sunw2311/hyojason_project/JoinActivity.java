@@ -33,11 +33,6 @@ public class JoinActivity extends AppCompatActivity {
         joinPassword = findViewById(R.id.join_password);
         joinPetName = findViewById(R.id.join_petName);
 
-        btnJoin = findViewById(R.id.btn_join);
-
-        listCheck = findViewById(R.id.list_check);
-
-
         btnJoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
