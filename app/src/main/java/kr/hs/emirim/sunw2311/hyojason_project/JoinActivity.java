@@ -28,10 +28,6 @@ public class JoinActivity extends AppCompatActivity {
 
         ActionBar abar = getSupportActionBar();
         abar.hide();
-        joinEmail = findViewById(R.id.join_email);
-        joinId = findViewById(R.id.join_id);
-        joinPassword = findViewById(R.id.join_password);
-        joinPetName = findViewById(R.id.join_petName);
 
         btnJoin.setOnClickListener(new View.OnClickListener() {
             @Override
