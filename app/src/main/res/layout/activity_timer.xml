@@ -12,17 +12,26 @@
         android:paddingBottom="20dp"
         android:src="@drawable/title"
         android:background="#FFC845"/>
-
+    <ImageButton
+        android:id="@+id/btn_timer_home"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:background="@color/limpidity"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/home"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
         android:text="feed timer"
         android:textStyle="bold"
         android:textColor="#878787"
         android:textSize="30sp"
         android:drawableLeft="@drawable/timer_rice"/>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginLeft="10dp"

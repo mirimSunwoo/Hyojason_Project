@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     android:background="#FFC845"
     tools:context=".MainActivity">
+    <ImageButton
+        android:id="@+id/btn_mypage_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:background="@color/limpidity"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/back2_1"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +24,6 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:layout_gravity="center"
             android:src="@drawable/profile_background" />
         <ImageButton

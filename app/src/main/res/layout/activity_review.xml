@@ -18,7 +18,7 @@
             android:src="@drawable/title"/>
     </LinearLayout>
     <ImageButton
-        android:id="@+id/btn_recipe_home"
+        android:id="@+id/btn_review_home"
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_gravity="right"
