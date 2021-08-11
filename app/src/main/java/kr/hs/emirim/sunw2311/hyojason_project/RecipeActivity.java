@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import org.w3c.dom.Text;
 
 public class RecipeActivity extends AppCompatActivity {
-    ImageButton btnRecipeHome,btnSamgyetang;
+    ImageButton btnRecipeHome;
     TextView textSamgyetang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,12 +20,8 @@ public class RecipeActivity extends AppCompatActivity {
 
         btnRecipeHome =  findViewById(R.id.btn_recipe_home);
         btnRecipeHome.setOnClickListener(btnHomeListener);
-
         textSamgyetang = findViewById(R.id.text_samgyetang);
         textSamgyetang.setOnClickListener(textListener);
-
-        btnSamgyetang = findViewById(R.id.btn_samgyetang);
-        btnSamgyetang.setOnClickListener(btnSamgyetangListener);
 
     }
    ImageButton.OnClickListener btnHomeListener = new View.OnClickListener() {
@@ -37,14 +33,6 @@ public class RecipeActivity extends AppCompatActivity {
     }
    };
     View.OnClickListener textListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), RecipeExActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    };
-    View.OnClickListener btnSamgyetangListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), RecipeExActivity.class);
