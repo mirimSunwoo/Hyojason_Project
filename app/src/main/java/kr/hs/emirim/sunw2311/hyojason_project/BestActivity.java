@@ -18,9 +18,11 @@ public class BestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_best_food);
 
         btnBestHome = findViewById(R.id.btn_best_home);
+        btnBestHome.setOnClickListener(btnHomeListener);
         TextPaprika = findViewById(R.id.text_paprika);
+        TextPaprika.setOnClickListener(PaprikaListener);
     }
-    ImageButton.OnClickListener btnHomeListener = new View.OnClickListener() {
+    View.OnClickListener btnHomeListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
@@ -28,7 +30,7 @@ public class BestActivity extends AppCompatActivity {
             finish();
         }
     };
-    View.OnClickListener textListener = new View.OnClickListener() {
+    View.OnClickListener PaprikaListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), BestExActivity.class);
