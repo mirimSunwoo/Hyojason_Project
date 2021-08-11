@@ -15,9 +15,9 @@ public class BestExActivity extends AppCompatActivity {
         setContentView(R.layout.activity_best_food_ex);
 
         btnHome = findViewById(R.id.btn_best_home);
-        btnHome.setOnClickListener(btnListener);
+        btnHome.setOnClickListener(btnHomeListener);
     }
-    View.OnClickListener btnListener = new View.OnClickListener() {
+    View.OnClickListener btnHomeListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), BestActivity.class);
