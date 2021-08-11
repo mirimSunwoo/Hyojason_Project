@@ -22,7 +22,7 @@ public class BestActivity extends AppCompatActivity {
         TextPaprika = findViewById(R.id.text_paprika);
         TextPaprika.setOnClickListener(PaprikaListener);
     }
-    ImageButton.OnClickListener btnHomeListener = new View.OnClickListener() {
+    View.OnClickListener btnHomeListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), MenuActivity.class);

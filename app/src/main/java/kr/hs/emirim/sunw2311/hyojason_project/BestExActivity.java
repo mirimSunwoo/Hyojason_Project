@@ -8,16 +8,16 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BestExActivity extends AppCompatActivity {
-    ImageButton btnHome;
+    ImageButton btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_best_food_ex);
 
-        btnHome = findViewById(R.id.btn_best_home);
-        btnHome.setOnClickListener(btnHomeListener);
+        btnBack = findViewById(R.id.btn_best_back);
+        btnBack.setOnClickListener(btnBackListener);
     }
-    View.OnClickListener btnHomeListener = new View.OnClickListener() {
+    View.OnClickListener btnBackListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), BestActivity.class);
