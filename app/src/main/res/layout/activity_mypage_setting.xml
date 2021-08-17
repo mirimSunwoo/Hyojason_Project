@@ -7,7 +7,7 @@
     android:background="#FFC845"
     tools:context=".MainActivity">
     <ImageButton
-        android:id="@+id/btn_mypage_home"
+        android:id="@+id/btn_setting_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="right"
