@@ -12,7 +12,7 @@ public class MypageSettingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recipe_food_ex);
+        setContentView(R.layout.activity_mypage_setting);
 
         btnBack= findViewById(R.id.btn_setting_back);
         btnBack.setOnClickListener(btnBackListener);
