@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange">
+    android:background="@color/orange"
+    tools:context=".CouPonActivity">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,6 +22,7 @@
         android:layout_marginBottom="10dp"
         android:src="@drawable/home"/>
     <TextView
+        android:id="@+id/btn_coupon"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:background="@drawable/coupon_radius"

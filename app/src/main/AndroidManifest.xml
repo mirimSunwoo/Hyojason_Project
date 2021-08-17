@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hyojason_Project">
-        <activity android:name=".Ex_Join">
+        <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -18,7 +18,6 @@
         <activity android:name=".JoinActivity"/>
         <activity android:name=".FindActivity"/>
         <activity android:name=".ListViewActivity"/>
-        <activity android:name=".MenuActivity"/>
         <activity android:name=".BestActivity"/>
         <activity android:name=".BestExActivity"/>
         <activity android:name=".SearchActivity"/>
@@ -27,6 +26,8 @@
         <activity android:name=".ReviewActivity"/>
         <activity android:name=".RecipeExActivity"/>
         <activity android:name=".MypageActivity"/>
+        <activity android:name=".CouPonActivity"/>
+        <activity android:name=".CouPonScreenActivity"/>
         <activity android:name="MypageSettingActivity"/>
 
     </application>
