@@ -36,7 +36,7 @@
         android:iconifiedByDefault="false"/>
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="550dp"
+        android:layout_height="450dp"
         android:background="@drawable/review_radius"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
@@ -106,7 +106,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="20dp"
                 android:src="@drawable/plus"/>
 
     </LinearLayout>
