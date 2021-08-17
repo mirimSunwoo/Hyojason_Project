@@ -30,7 +30,7 @@ public class MenuActivity extends AppCompatActivity {
     ImageButton.OnClickListener btnListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), MyPageActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MypageActivity.class);
             startActivity(intent);
             finish();
         }
