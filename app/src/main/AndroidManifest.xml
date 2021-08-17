@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hyojason_Project">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Ex_Join">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -28,5 +28,6 @@
         <activity android:name=".RecipeExActivity"/>
         <activity android:name=".MypageActivity"/>
         <activity android:name="MypageSettingActivity"/>
+
     </application>
 </manifest>

@@ -7,11 +7,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
+import static java.sql.Types.CHAR;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.w3c.dom.Text;
@@ -19,7 +21,7 @@ import org.w3c.dom.Text;
 public class JoinActivity extends AppCompatActivity {
     MyDBHelper dbHelper;
     EditText joinId, joinPassword, joinPetName, joinEmail, editNamesResult, editIdresult;
-    TextView listCheck, btnJoin;
+    Button btnJoin;
     SQLiteDatabase db ;
 
     @Override
@@ -27,12 +29,12 @@ public class JoinActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
         setTitle("회원가입 DB");
-//        ActionBar abar = getSupportActionBar();
-//        abar.hide();
+
         joinEmail = findViewById(R.id.join_email);
         joinId = findViewById(R.id.join_id);
         joinPassword = findViewById(R.id.join_password);
         joinPetName = findViewById(R.id.join_petName);
+
         btnJoin = findViewById(R.id.btn_join);
 
         editNamesResult = findViewById(R.id.edtNameResult);
