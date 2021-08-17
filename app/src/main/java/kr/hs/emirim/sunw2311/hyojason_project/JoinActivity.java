@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,7 @@ public class JoinActivity extends AppCompatActivity {
     MyDBHelper dbHelper;
     EditText joinId, joinPassword, joinPetName, joinEmail, editNamesResult, editIdresult;
     Button btnJoin;
+    ImageButton btnBack;
     SQLiteDatabase db ;
 
     @Override
@@ -29,6 +31,9 @@ public class JoinActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
         setTitle("회원가입 DB");
+
+        btnBack = findViewById(R.id.btn_join_back);
+        btnBack.setOnClickListener(btnBackListener);
 
         joinEmail = findViewById(R.id.join_email);
         joinId = findViewById(R.id.join_id);
@@ -109,4 +114,12 @@ public class JoinActivity extends AppCompatActivity {
             onCreate(db);
         }
     }
+    View.OnClickListener btnBackListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    };
 }

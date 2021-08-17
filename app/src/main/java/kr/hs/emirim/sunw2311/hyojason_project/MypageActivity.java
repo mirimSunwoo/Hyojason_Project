@@ -5,14 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MypageActivity extends AppCompatActivity {
     ImageButton btnHome,btnSetting;
     Button btnLogout;
-    TextView btnCouPon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,17 +24,6 @@ public class MypageActivity extends AppCompatActivity {
 
         btnLogout = findViewById(R.id.btn_mypage_logout);
         btnLogout.setOnClickListener(btnLogoutListener);
-
-        btnCouPon = findViewById(R.id.coupon);
-
-        btnCouPon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CouPonActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
     }
     View.OnClickListener btnHomeListener = new View.OnClickListener() {
         @Override

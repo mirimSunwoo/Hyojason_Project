@@ -1,6 +1,7 @@
 package kr.hs.emirim.sunw2311.hyojason_project;
 
 import android.content.Intent;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
