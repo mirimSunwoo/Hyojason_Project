@@ -18,10 +18,7 @@ public class ListViewActivity extends AppCompatActivity {
 
         setTitle("종 선택");
 
-        final String[] mid = {"강아지","고양이","새","햄스터","파충류","강아지","고양이",
-                            "새","햄스터", "파충류","강아지","고양이","새","햄스터","파충류"
-                            ,"강아지","고양이","새","햄스터","파충류","강아지","고양이","새",
-                            "햄스터","파충류","강아지","고양이","새","햄스터","파충류"};
+        final String[] mid = {"강아지","고양이","앵무새","햄스터"};
 
         ListView list = (ListView) findViewById(R.id.listview);
 
