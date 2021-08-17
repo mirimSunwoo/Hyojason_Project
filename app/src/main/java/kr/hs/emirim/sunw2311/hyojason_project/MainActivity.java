@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
         abar.hide();
 
         btnStart = findViewById(R.id.btn_start);
-        btnStart.setOnClickListener(btnListener);
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
-    View.OnClickListener btnListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    };
 }

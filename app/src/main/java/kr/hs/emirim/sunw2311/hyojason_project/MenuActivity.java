@@ -17,7 +17,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-
+        btnSearch = findViewById(R.id.btn_menu_search);
         btnMyPage = findViewById(R.id.btn_mypage);
         btnBest = findViewById(R.id.btn_menu_best);
         btnReview = findViewById(R.id.btn_menu_review);
@@ -25,6 +25,7 @@ public class MenuActivity extends AppCompatActivity {
         btnTimer = findViewById(R.id.btn_menu_timer);
         btnSearch = findViewById(R.id.btn_menu_search);
 
+        btnSearch.setOnClickListener(btnSearchListener);
         btnMyPage.setOnClickListener(btnListener);
         btnBest.setOnClickListener(btnBestListener);
         btnReview.setOnClickListener(btnReviewListener);
