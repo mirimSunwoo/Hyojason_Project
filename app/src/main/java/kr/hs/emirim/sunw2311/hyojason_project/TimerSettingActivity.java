@@ -38,7 +38,6 @@ public class TimerSettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
-                Toast.makeText(getApplicationContext(), "추가되었습니다.", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 finish();
             }
