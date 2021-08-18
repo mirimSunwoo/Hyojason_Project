@@ -86,7 +86,7 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/radius"
         android:gravity="center"
-        android:text="확인"
+        android:text="check"
         android:textSize="25dp"
         app:backgroundTint="#E16F4B" />
 </LinearLayout>
