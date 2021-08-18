@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TimerActivity extends AppCompatActivity {
-    ImageButton btnHome;
+    ImageButton btnHome, btnFeed, btnSnack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +16,26 @@ public class TimerActivity extends AppCompatActivity {
 
         btnHome = findViewById(R.id.btn_timer_home);
         btnHome.setOnClickListener(btnHomeListener);
+
+        btnFeed = findViewById(R.id.btn_plus_feed);
+        btnSnack = findViewById(R.id.btn_plus_snack);
+
+        btnFeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TimerSettingActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        btnSnack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TimerSettingActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
     View.OnClickListener btnHomeListener = new View.OnClickListener() {
         @Override
