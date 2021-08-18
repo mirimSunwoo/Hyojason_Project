@@ -103,12 +103,13 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="8dp"/>
         </LinearLayout>
-            <ImageView
+            <ImageButton
+                android:id="@+id/btn_review_add"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
+                android:background="@color/limpidity"
                 android:src="@drawable/plus"/>
-
     </LinearLayout>
 </LinearLayout>
