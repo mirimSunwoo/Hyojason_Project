@@ -27,6 +27,9 @@
         <activity android:name=".ReviewActivity"/>
         <activity android:name=".RecipeExActivity"/>
         <activity android:name=".MypageActivity"/>
+        <activity android:name=".CouPonActivity"/>
+        <activity android:name=".CouPonScreenActivity"/>
+        <activity android:name=".CouPonFinishActivity"/>
         <activity android:name="MypageSettingActivity"/>
 
     </application>

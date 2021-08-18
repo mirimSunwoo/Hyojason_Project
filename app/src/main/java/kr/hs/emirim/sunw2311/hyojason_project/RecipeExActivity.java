@@ -8,19 +8,19 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RecipeExActivity extends AppCompatActivity {
-    ImageButton btnHome;
+    ImageButton btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_food_ex);
 
-        btnHome = findViewById(R.id.btn_recipe_home);
-        btnHome.setOnClickListener(btnHomeListener);
+        btnBack = findViewById(R.id.btn_recipe_back);
+        btnBack.setOnClickListener(btnBackListener);
     }
-    View.OnClickListener btnHomeListener = new View.OnClickListener() {
+    View.OnClickListener btnBackListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+            Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
             startActivity(intent);
             finish();
         }
