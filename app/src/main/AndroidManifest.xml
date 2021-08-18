@@ -24,13 +24,14 @@
         <activity android:name=".SearchActivity"/>
         <activity android:name=".RecipeActivity"/>
         <activity android:name=".TimerActivity"/>
+        <activity android:name=".TimerSettingActivity"/>
         <activity android:name=".ReviewActivity"/>
         <activity android:name=".RecipeExActivity"/>
         <activity android:name=".MypageActivity"/>
         <activity android:name=".CouPonActivity"/>
         <activity android:name=".CouPonScreenActivity"/>
         <activity android:name=".CouPonFinishActivity"/>
-        <activity android:name="MypageSettingActivity"/>
+        <activity android:name=".MypageSettingActivity"/>
 
     </application>
 </manifest>

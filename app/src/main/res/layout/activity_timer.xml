@@ -68,6 +68,7 @@
             android:textColor="#666666"
             android:drawableRight="@drawable/btn_minus"/>
         <ImageButton
+            android:id="@+id/btn_plus_feed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -120,6 +121,7 @@
             android:textColor="#666666"
             android:drawableRight="@drawable/btn_minus"/>
         <ImageButton
+            android:id="@+id/btn_plus_snack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
