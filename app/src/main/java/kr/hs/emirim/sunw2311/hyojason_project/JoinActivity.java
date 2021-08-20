@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +18,7 @@ import android.widget.Toast;
 
 import static java.sql.Types.CHAR;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.w3c.dom.Text;
@@ -25,6 +29,7 @@ public class JoinActivity extends AppCompatActivity {
     Button btnJoin;
     ImageButton btnBack;
     SQLiteDatabase db ;
+    TextView menuBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +45,10 @@ public class JoinActivity extends AppCompatActivity {
         joinPassword = findViewById(R.id.join_password);
         joinPetName = findViewById(R.id.join_petName);
 
+
         btnJoin = findViewById(R.id.btn_join);
+        menuBtn = findViewById(R.id.menu_check);
+        registerForContextMenu(menuBtn);
 
         editNamesResult = findViewById(R.id.edtNameResult);
         editIdresult = findViewById(R.id.edtIdResult);
@@ -66,6 +74,33 @@ public class JoinActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        menu.setHeaderTitle("종 선택");
+
+        getMenuInflater().inflate(R.menu.menu, menu);
+        super.onCreateContextMenu(menu, v, menuInfo);
+
+    }
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu1:
+                Toast.makeText(getApplicationContext(), "강아지", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.menu2:
+                Toast.makeText(getApplicationContext(), "고양이", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.menu3:
+                Toast.makeText(getApplicationContext(), "새", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.menu4:
+                Toast.makeText(getApplicationContext(), "햄스터", Toast.LENGTH_SHORT).show();
+                return true;
+        }
+        return false;
     }
     //    View.OnClickListener listListener = new View.OnClickListener() {
 //        @Override
@@ -121,5 +156,6 @@ public class JoinActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
     };
 }

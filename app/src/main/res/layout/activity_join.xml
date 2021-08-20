@@ -39,7 +39,7 @@
             android:textColor="@color/gray"
             android:background="@drawable/edit_radius"/>
         <TextView
-            android:id="@+id/list_check"
+            android:id="@+id/menu_check"
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
