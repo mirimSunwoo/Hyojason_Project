@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu1"
+        android:title="강아지" />
+    <item
+        android:id="@+id/menu2"
+        android:title="고양이" />
+    <item
+        android:id="@+id/menu3"
+        android:title="새" />
+    <item
+        android:id="@+id/menu4"
+        android:title="햄스터" />
+
+</menu>
