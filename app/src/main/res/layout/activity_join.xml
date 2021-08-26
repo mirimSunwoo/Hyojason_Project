@@ -7,7 +7,6 @@
     android:orientation="vertical"
     android:background="#FFC845"
     tools:context=".MainActivity">
-
     <ImageButton
         android:id="@+id/btn_join_back"
         android:layout_width="50dp"
@@ -78,18 +77,16 @@
         android:layout_marginTop="10dp"
         android:textColorHint="@color/gray"
         android:background="@drawable/edit_radius"/>
-
     <Button
         android:id="@+id/btn_join"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/btn_radius"
-        android:gravity="center"
         android:text="@string/join"
         android:textSize="30dp"
-        android:textStyle="bold"
+        android:textStyle="bold" />
         app:backgroundTint="#E16F4B" />
     <LinearLayout
         android:layout_width="match_parent"
