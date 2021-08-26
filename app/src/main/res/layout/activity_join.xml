@@ -27,6 +27,7 @@
         android:gravity="center"
         android:orientation="horizontal">
         <EditText
+            android:paddingLeft="10dp"
             android:id="@+id/join_petName"
             android:layout_width="150dp"
             android:layout_height="70dp"
@@ -40,7 +41,7 @@
             android:layout_width="140dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
-            android:gravity="center_vertical"
+            android:gravity="center"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
             android:hint="종 선택"
@@ -48,6 +49,7 @@
             android:background="@drawable/edit_radius"/>
     </LinearLayout>
     <EditText
+        android:paddingLeft="10dp"
         android:id="@+id/join_id"
         android:layout_width="300dp"
         android:layout_height="70dp"
@@ -58,6 +60,7 @@
         android:textColorHint="@color/gray"
         android:background="@drawable/edit_radius"/>
     <EditText
+        android:paddingLeft="10dp"
         android:id="@+id/join_password"
         android:layout_width="300dp"
         android:layout_height="70dp"
@@ -68,6 +71,7 @@
         android:textColorHint="@color/gray"
         android:background="@drawable/edit_radius"/>
     <EditText
+        android:paddingLeft="10dp"
         android:id="@+id/join_email"
         android:layout_width="300dp"
         android:layout_height="70dp"
