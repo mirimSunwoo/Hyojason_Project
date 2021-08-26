@@ -8,25 +8,23 @@
     android:background="#FFC845"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/j"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
     <ImageButton
         android:id="@+id/btn_join_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@color/limpidity"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/back2_1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/j"
+        android:layout_gravity="center"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
         <EditText
@@ -35,21 +33,19 @@
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:textSize="25sp"
-            android:text="@string/pet_name"
-            android:textStyle="bold"
-            android:textColor="@color/gray"
+            android:hint="@string/pet_name"
+            android:textColorHint="@color/gray"
             android:background="@drawable/edit_radius"/>
         <TextView
             android:id="@+id/menu_check"
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:textSize="23sp"
-            android:text="종 선택"
-            android:textStyle="bold"
-            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:hint="종 선택"
+            android:textColorHint="@color/gray"
             android:background="@drawable/edit_radius"/>
     </LinearLayout>
     <EditText
@@ -58,21 +54,19 @@
         android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:textSize="25sp"
-        android:text="@string/in_id"
-        android:textStyle="bold"
-        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:hint="@string/in_id"
+        android:textColorHint="@color/gray"
         android:background="@drawable/edit_radius"/>
     <EditText
         android:id="@+id/join_password"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:textSize="25sp"
-        android:text="@string/in_pass"
+        android:textSize="20sp"
+        android:hint="@string/in_pass"
         android:layout_marginTop="10dp"
-        android:textStyle="bold"
-        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
         android:background="@drawable/edit_radius"/>
     <EditText
         android:id="@+id/join_email"
@@ -82,19 +76,21 @@
         android:textSize="20sp"
         android:hint="@string/in_email"
         android:layout_marginTop="10dp"
-        android:textColorHint="#B5B2B2"
+        android:textColorHint="@color/gray"
         android:background="@drawable/edit_radius"/>
+
     <Button
         android:id="@+id/btn_join"
         android:layout_width="300dp"
-        android:layout_marginTop="10dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:text="@string/join"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_radius"
         android:gravity="center"
-        android:textSize="20dp"
+        android:text="@string/join"
+        android:textSize="30dp"
         android:textStyle="bold"
-        android:background="@drawable/btn_radius"/>
+        app:backgroundTint="#E16F4B" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
