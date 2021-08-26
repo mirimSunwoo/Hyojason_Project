@@ -61,11 +61,11 @@ public class JoinActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 db = dbHelper.getWritableDatabase();
-                db.execSQL("INSERT INTO groupTB VALUES (" +
-                        "'" + joinPetName.getText().toString() + "' ,"
-                        + joinId.getText().toString() + "' ,"
-                        + joinPassword.getText().toString() + "' ,"
-                        + joinEmail.getText().toString() + ");");
+                db.execSQL("INSERT INTO joinTB VALUES (" +
+                        "'" + joinPetName.getText().toString() + "' ,'"
+                        + joinId.getText().toString() + "' ,'"
+                        + joinPassword.getText().toString() + "' ,'"
+                        + joinEmail.getText().toString() + "');");
                 db.close();
                 Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
                 selectDB();
@@ -112,7 +112,7 @@ public class JoinActivity extends AppCompatActivity {
 //    };
     public void selectDB(){
         db = dbHelper.getReadableDatabase();
-        Cursor cursor = db.rawQuery("select * from groupTB;", null);
+        Cursor cursor = db.rawQuery("select * from joinTB;", null);
         String petName = "펫 이름\r\n_____________\r\n";
         String Id = "아이디\r\n_____________\r\n";
         String password = "비밀번호\r\n_____________\r\n";
@@ -136,16 +136,16 @@ public class JoinActivity extends AppCompatActivity {
     public class MyDBHelper extends SQLiteOpenHelper {
 
         public MyDBHelper(Context context){
-            super(context,"groupTB",null, 1);
+            super(context,"joinTB",null, 1);
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("create table groupTB(petName char(20) primary key, id char, password char, email char);");
+            db.execSQL("create table joinTB(petName char(20), id char(20) primary key, password char(30), email char(30));");
         }
 
         @Override
         public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-            db.execSQL("drop table if exists groupTB");
+            db.execSQL("drop table if exists joinTB");
             onCreate(db);
         }
     }
