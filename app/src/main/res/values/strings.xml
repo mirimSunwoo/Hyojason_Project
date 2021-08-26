@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Hyojason_Project</string>
-    <string name="in_id">id</string>
-    <string name="in_pass">password</string>
+    <string name="in_id">ID</string>
+    <string name="in_pass">PASSWORD</string>
     <string name="btn_1">Login</string>
     <string name="find_id">회원가입</string>
     <string name="find_pass">아이디, 비밀번호 찾기</string>
     <string name="join">Join</string>
     <string name="pet_name">pet name</string>
-    <string name="in_email">email</string>
+    <string name="in_email">E-mail</string>
     <string name="yes">Yes!</string>
     <string name="no">No!</string>
 </resources>
