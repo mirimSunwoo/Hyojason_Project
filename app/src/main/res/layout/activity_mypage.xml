@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="#FFC845"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <ImageView
         android:id="@+id/title_img"
         android:layout_width="match_parent"
@@ -21,87 +21,119 @@
         android:background="@color/limpidity"
         android:layout_marginRight="30dp"
         android:src="@drawable/home"/>
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="vertical"
-        android:background="@drawable/radius"
-        android:layout_width="match_parent"
-        android:layout_height="250dp">
         <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="200dp"
-                android:layout_marginLeft="20dp"
-                android:src="@drawable/mypage"/>
-            <ImageButton
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="30dp"
-                android:id="@+id/btn_mypage_setting"
-                android:layout_width="50dp"
-                android:layout_height="30dp"
-                android:background="@drawable/radius"
-                android:src="@drawable/setting"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="20dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/radius"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/mypage"/>
+                    <ImageButton
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:id="@+id/btn_mypage_setting"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/radius"
+                        android:src="@drawable/setting"/>
+                </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:paddingRight="230dp"
-                android:src="@drawable/cat"/>
-                android:text="이름"/>
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/cat" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textSize="20dp"
+                    android:text="이름 \n종 \n나이"/>
+            </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/radius"
+                android:backgroundTint="#CFCFCF"
                 android:paddingLeft="20dp"
                 android:paddingTop="20dp"
-                android:text="소개글을 입력해주세요"
-                android:backgroundTint="#CFCFCF"/>
+                android:text="소개글을 입력해주세요" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:paddingTop="40dp"
-            android:paddingBottom="40dp"
-            android:paddingLeft="30dp"
+        <LinearLayout
             android:layout_width="210dp"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/likes"
-            android:text=" X 50"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textColor="#0067A3"
-            android:background="@drawable/radius">
-        </TextView>
-        <ImageView
-            android:tooltipText=""
-            android:paddingTop="35dp"
-            android:paddingBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="130dp"
+            android:background="@drawable/radius"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/likes"
+                android:text=" X 50"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#0067A3"
+                android:background="@drawable/radius"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/medal"
-            android:background="@drawable/radius"/>
+            android:background="@drawable/radius"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#676767"
+                android:gravity="center"
+                android:text="Lv.50"/>
+            <ImageView
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/medal"
+                android:background="@drawable/radius"/>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
@@ -110,36 +142,42 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
+
+        <Button
             android:id="@+id/coupon"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@drawable/radius"
             android:gravity="center"
             android:text="쿠폰 등록 하러 가기"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textColor="#000" />
-        <TextView
-            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            app:backgroundTint="#FFFFFF" />
+
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@drawable/radius"
             android:gravity="center"
             android:text="전체 랭킹 보러 가기"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            app:backgroundTint="#FFFFFF" />
+
         <Button
             android:id="@+id/btn_mypage_logout"
             android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/radius"
-            android:text="로그아웃"/>
+            android:text="로그아웃"
+            app:backgroundTint="#E16F4B" />
     </LinearLayout>
 </LinearLayout>
