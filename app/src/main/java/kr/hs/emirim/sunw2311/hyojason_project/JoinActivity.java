@@ -69,9 +69,9 @@ public class JoinActivity extends AppCompatActivity {
                 db.close();
                 Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
                 selectDB();
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(intent);
-                finish();
+//                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+//                startActivity(intent);
+//                finish();
             }
         });
     }
@@ -86,20 +86,26 @@ public class JoinActivity extends AppCompatActivity {
     }
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
+
         switch (item.getItemId()) {
             case R.id.menu1:
                 Toast.makeText(getApplicationContext(), "강아지", Toast.LENGTH_SHORT).show();
+                menuBtn.setText("강아지");
                 return true;
             case R.id.menu2:
                 Toast.makeText(getApplicationContext(), "고양이", Toast.LENGTH_SHORT).show();
+                menuBtn.setText("고양이");
                 return true;
             case R.id.menu3:
                 Toast.makeText(getApplicationContext(), "새", Toast.LENGTH_SHORT).show();
+                menuBtn.setText("새");
                 return true;
             case R.id.menu4:
                 Toast.makeText(getApplicationContext(), "햄스터", Toast.LENGTH_SHORT).show();
+                menuBtn.setText("햄스터");
                 return true;
         }
+
         return false;
     }
     //    View.OnClickListener listListener = new View.OnClickListener() {
