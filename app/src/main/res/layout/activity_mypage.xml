@@ -18,6 +18,7 @@
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_gravity="right"
+        android:layout_marginTop="5dp"
         android:background="@color/limpidity"
         android:layout_marginRight="30dp"
         android:src="@drawable/home"/>
@@ -26,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:orientation="vertical"
@@ -74,12 +75,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/radius"
                 android:backgroundTint="#CFCFCF"
                 android:paddingLeft="20dp"
-                android:paddingTop="20dp"
+                android:paddingTop="15dp"
                 android:text="소개글을 입력해주세요" />
         </LinearLayout>
     </LinearLayout>

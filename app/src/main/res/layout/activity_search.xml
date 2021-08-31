@@ -29,20 +29,19 @@
         android:layout_marginLeft="49dp"
         android:gravity="center"
         android:drawableRight="@drawable/search"
-        android:text="음식을 입력하세요" />
+        android:hint="음식을 입력하세요" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="70dp"
-        android:layout_marginLeft="10dp">
+        android:layout_gravity="center">
         <TextView
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:textSize="20sp"
-            android:textColor="#000000"
             android:text="#두부"/>
         <TextView
             android:layout_weight="1"
@@ -50,7 +49,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
-            android:textColor="#000000"
             android:text="#사과"/>
         <TextView
             android:layout_weight="1"
@@ -58,7 +56,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
-            android:textColor="#000000"
             android:text="#배"/>
     </LinearLayout>
     <LinearLayout
@@ -83,6 +80,4 @@
             android:textColor="#000000"
             android:text="#단호박"/>
     </LinearLayout>
-
-
 </LinearLayout>
