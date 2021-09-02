@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 
 public class DatabaseOpenHelper extends SQLiteOpenHelper {
 
-    public static final String tableName = "hyosason";
+    public static final String tableName = "joinTB";
 
     public DatabaseOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
