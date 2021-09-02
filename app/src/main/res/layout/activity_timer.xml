@@ -41,7 +41,7 @@
         android:backgroundTint="#FFC845"
         android:layout_width="match_parent"
         android:layout_height="200dp">
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -54,7 +54,7 @@
             android:textStyle="bold"
             android:textColor="#666666"
             android:drawableRight="@drawable/btn_minus"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -94,7 +94,7 @@
         android:backgroundTint="#FFC845"
         android:layout_width="match_parent"
         android:layout_height="200dp">
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -107,7 +107,7 @@
             android:textStyle="bold"
             android:textColor="#666666"
             android:drawableRight="@drawable/btn_minus"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
