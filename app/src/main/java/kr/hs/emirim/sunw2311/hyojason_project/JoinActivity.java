@@ -104,7 +104,6 @@ public class JoinActivity extends AppCompatActivity {
                 menuBtn.setText("햄스터");
                 return true;
         }
-
         return false;
     }
     //    View.OnClickListener listListener = new View.OnClickListener() {
@@ -137,7 +136,6 @@ public class JoinActivity extends AppCompatActivity {
         db.close();
     }
     public class MyDBHelper extends SQLiteOpenHelper {
-
         public MyDBHelper(Context context){
             super(context,"joinTB",null, 1);
         }
@@ -145,7 +143,6 @@ public class JoinActivity extends AppCompatActivity {
         public void onCreate(SQLiteDatabase db) {
             db.execSQL("create table joinTB(petName char(20), id char(20) primary key, password char(30), email char(30));");
         }
-
         @Override
         public void onUpgrade(SQLiteDatabase db, int i, int i1) {
             db.execSQL("drop table if exists joinTB");
@@ -159,6 +156,5 @@ public class JoinActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
-
     };
 }

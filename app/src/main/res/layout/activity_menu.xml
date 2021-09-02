@@ -30,7 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:drawableRight="@drawable/search"
-        android:text="음식을 입력하세요"/>
+        android:gravity="center"
+        android:hint="음식을 입력하세요"/>
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginTop="40dp"
