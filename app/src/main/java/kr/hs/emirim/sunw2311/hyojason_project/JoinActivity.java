@@ -25,7 +25,7 @@ import org.w3c.dom.Text;
 
 public class JoinActivity extends AppCompatActivity {
     MyDBHelper dbHelper;
-    EditText joinId, joinPassword, joinPetName, joinEmail, editNamesResult, editIdresult;
+    EditText joinId, joinPassword, joinPetName, joinEmail;
     Button btnJoin;
     ImageButton btnBack;
     SQLiteDatabase db ;
@@ -50,8 +50,7 @@ public class JoinActivity extends AppCompatActivity {
         menuBtn = findViewById(R.id.menu_check);
         registerForContextMenu(menuBtn);
 
-        editNamesResult = findViewById(R.id.edtNameResult);
-        editIdresult = findViewById(R.id.edtIdResult);
+
 //        listCheck = findViewById(R.id.list_check);
 //        listCheck.setOnClickListener(listListener);
 
@@ -133,8 +132,6 @@ public class JoinActivity extends AppCompatActivity {
 //        joinId.setText(Id);
 //        joinPassword.setText(password);
 //        joinEmail.setText(email);
-        editNamesResult.setText(petName);
-        editIdresult.setText(Id);
 
         cursor.close();
         db.close();

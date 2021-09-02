@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                     toast.show();
                     return;
                 }
-                sql = "SELECT id FROM "+ helper.tableName + " WHERE id = '" + id + "'";
+                sql = "SELECT id FROM joinTB WHERE id = '" + id + "'";
                 cursor = database.rawQuery(sql, null);
 
                 if(cursor.getCount() != 1){
@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                     toast.show();
                     return;
                 }
-                sql = "SELECT pw FROM "+ helper.tableName + " WHERE id = '" + id + "'";
+                sql = "SELECT password FROM joinTB WHERE password = '" + pw + "'";
 
                 cursor = database.rawQuery(sql, null);
 
