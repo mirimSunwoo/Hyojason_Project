@@ -13,17 +13,18 @@
         android:layout_height="50dp"
         android:background="@color/limpidity"
         android:layout_marginLeft="300dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/back2_1"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/j"
+        android:layout_marginTop="50dp"
         android:layout_gravity="center"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:gravity="center"
         android:orientation="horizontal">
         <EditText
@@ -54,7 +55,7 @@
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:textSize="20sp"
         android:hint="@string/in_id"
         android:textColorHint="@color/gray"
@@ -67,8 +68,9 @@
         android:layout_gravity="center"
         android:textSize="20sp"
         android:hint="@string/in_pass"
+        android:padding="6dp"
         android:inputType="textPassword"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:textColorHint="@color/gray"
         android:background="@drawable/edit_radius"/>
     <EditText
@@ -79,7 +81,7 @@
         android:layout_gravity="center"
         android:textSize="20sp"
         android:hint="@string/in_email"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:textColorHint="@color/gray"
         android:background="@drawable/edit_radius"/>
 
