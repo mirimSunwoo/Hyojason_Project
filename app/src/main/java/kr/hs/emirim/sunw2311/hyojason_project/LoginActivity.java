@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(cursor.getCount() != 1){
                     //아이디가 틀렸습니다.
-                    Toast toast = Toast.makeText(LoginActivity.this, "존재하지 않는 아이디입니다.", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(LoginActivity.this, "아이디 또는 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT);
                     toast.show();
                     return;
                 }
@@ -74,11 +74,14 @@ public class LoginActivity extends AppCompatActivity {
                 cursor.moveToNext();
                 if (!pw.equals(cursor.getString(0))){
                     //비밀번호가 틀렸습니다.
-                    Toast toast = Toast.makeText(LoginActivity.this, "비밀번호가 틀렸습니다.", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(LoginActivity.this, "아이디 또는 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT);
                     toast.show();
                 }else {
                     //로그인 성공
-                    Toast toast = Toast.makeText(LoginActivity.this, "로그인 성공", Toast.LENGTH_SHORT);
+                    sql = "SELECT petName FROM joinTB where id='"+id+"'";
+                    cursor = database.rawQuery(sql, null);
+                    cursor.moveToNext();
+                    Toast toast = Toast.makeText(LoginActivity.this,cursor.getString(0)+"주인님 환영합니다", Toast.LENGTH_SHORT);
                     toast.show();
                     //인텐트 생성 및 호출
                     Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
