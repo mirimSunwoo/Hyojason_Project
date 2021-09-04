@@ -8,7 +8,7 @@
     android:background="#FFC845"
     tools:context=".MainActivity">
     <ImageButton
-        android:id="@+id/btn_join_back"
+        android:id="@+id/btn_find_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@color/limpidity"
@@ -25,7 +25,9 @@
         android:layout_height="70dp"
         android:layout_gravity="center"
         android:textSize="25sp"
-        android:text="@string/in_email"
+        android:paddingLeft="10dp"
+        android:hint="@string/in_email"
+        android:textColorHint="@color/gray"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_radius"/>
@@ -35,7 +37,7 @@
         android:layout_width="270dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/btn_radius"
         android:gravity="center"
         android:text="확인"
@@ -54,7 +56,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:textSize="25sp"
-        android:text="@string/in_id"
+        android:paddingLeft="10dp"
+        android:hint="ID"
+        android:textColorHint="@color/gray"
         android:textStyle="bold"
         android:background="@drawable/edit_radius"/>
     <EditText
@@ -63,7 +67,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:textSize="25sp"
-        android:text="@string/in_email"
+        android:paddingLeft="10dp"
+        android:hint="@string/in_email"
+        android:textColorHint="@color/gray"
         android:textStyle="bold"
         android:background="@drawable/edit_radius"/>
 
@@ -72,7 +78,7 @@
         android:layout_width="270dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/btn_radius"
         android:gravity="center"
         android:text="확인"
