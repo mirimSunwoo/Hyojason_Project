@@ -24,7 +24,7 @@
         android:layout_height="500dp"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/timer_setting_radius2">
         <EditText
             android:layout_width="300dp"
