@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MypageActivity extends AppCompatActivity {
     ImageButton btnHome,btnSetting;
-    Button btnLogout;
+    Button btnLogout, btnManager;
     TextView btnCoupon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,16 @@ public class MypageActivity extends AppCompatActivity {
 
         btnSetting = findViewById(R.id.btn_mypage_setting);
         btnSetting.setOnClickListener(btnSettingListener);
+
+        btnManager = findViewById(R.id.btn_mypage_manager);
+        btnManager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ManagerActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         btnCoupon = findViewById(R.id.coupon);
         btnCoupon.setOnClickListener(new View.OnClickListener() {

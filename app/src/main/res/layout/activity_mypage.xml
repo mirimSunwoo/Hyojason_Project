@@ -156,7 +156,20 @@
             android:textColor="#000"
             app:backgroundTint="#FFFFFF" />
 
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/radius"-->
+<!--            android:gravity="center"-->
+<!--            android:text="전체 랭킹 보러 가기"-->
+<!--            android:textColor="#000"-->
+<!--            app:backgroundTint="#FFFFFF" />-->
         <Button
+            android:id="@+id/btn_mypage_manager"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
@@ -165,10 +178,9 @@
             android:layout_weight="1"
             android:background="@drawable/radius"
             android:gravity="center"
-            android:text="전체 랭킹 보러 가기"
+            android:text="관리자 페이지"
             android:textColor="#000"
             app:backgroundTint="#FFFFFF" />
-
         <Button
             android:id="@+id/btn_mypage_logout"
             android:layout_width="match_parent"
