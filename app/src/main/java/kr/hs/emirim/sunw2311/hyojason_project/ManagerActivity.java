@@ -16,7 +16,12 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static java.sql.Types.CHAR;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
 
 public class ManagerActivity extends AppCompatActivity {
     ImageButton btnBack;
@@ -40,6 +45,8 @@ public class ManagerActivity extends AppCompatActivity {
         MDanger = findViewById(R.id.btn_manager_danger);
 
         MbtnCheck = findViewById(R.id.btn_manager_check);
+
+        dbHelper = new ManagerActivity.MyDBHelper(this);
 
         MbtnCheck.setOnClickListener(new View.OnClickListener() {
             @Override

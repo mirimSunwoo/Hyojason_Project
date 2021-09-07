@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hyojason_Project">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".ManagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity"/>
         <activity android:name=".MenuActivity"/>
         <activity android:name=".FindActivity"/>
-        <activity android:name=".ListViewActivity"/>
         <activity android:name=".JoinActivity"/>
         <activity android:name=".BestActivity"/>
         <activity android:name=".BestExActivity"/>
@@ -33,6 +33,5 @@
         <activity android:name=".CouPonScreenActivity"/>
         <activity android:name=".CouPonFinishActivity"/>
         <activity android:name=".MypageSettingActivity"/>
-        <activity android:name=".ManagerActivity"/>
     </application>
 </manifest>
