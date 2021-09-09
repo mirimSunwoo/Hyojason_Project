@@ -16,7 +16,12 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static java.sql.Types.CHAR;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
 
 public class ManagerActivity extends AppCompatActivity {
     ImageButton btnBack;
@@ -40,6 +45,8 @@ public class ManagerActivity extends AppCompatActivity {
         MDanger = findViewById(R.id.btn_manager_danger);
 
         MbtnCheck = findViewById(R.id.btn_manager_check);
+
+        dbHelper = new ManagerActivity.MyDBHelper(this);
 
         MbtnCheck.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,11 +83,11 @@ public class ManagerActivity extends AppCompatActivity {
     }
     public class MyDBHelper extends SQLiteOpenHelper {
         public MyDBHelper(Context context){
-            super(context,"managerDB",null, 1);
+            super(context,"managerDB",null, 2);
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("create table managerDB(animalName char(20), foodName char(20) primary key, info char(50), danger char(10));");
+            db.execSQL("create table managerDB(animalName char(20), foodName char(20) primary key, info char(100), danger char(5));");
         }
         @Override
         public void onUpgrade(SQLiteDatabase db, int i, int i1) {
