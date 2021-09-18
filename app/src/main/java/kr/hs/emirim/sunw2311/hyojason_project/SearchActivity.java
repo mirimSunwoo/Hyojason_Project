@@ -14,6 +14,7 @@ import java.util.List;
 
 public class SearchActivity extends AppCompatActivity {
     ImageButton btnHome;
+    AutoCompleteTextView btnSearch;
     private List<String> list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,9 @@ public class SearchActivity extends AppCompatActivity {
 
         btnHome = findViewById(R.id.btn_search_home);
         btnHome.setOnClickListener(btnHomeListener);
+
+        btnSearch = findViewById(R.id.autoCompleteTextView);
+        btnSearch.setOnClickListener(btnSearchListener);
     }
 
     private void settingList() {
@@ -202,6 +206,14 @@ public class SearchActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    };
+    View.OnClickListener btnSearchListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), SearchShowActivity.class);
             startActivity(intent);
             finish();
         }

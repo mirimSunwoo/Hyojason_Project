@@ -20,7 +20,7 @@
         android:layout_gravity="right"
         android:background="@drawable/radius"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/home"/>
 <!--    <TextView-->
 <!--        android:layout_width="300dp"-->
@@ -32,6 +32,7 @@
 <!--        android:drawableRight="@drawable/search"-->
 <!--        android:hint="음식을 입력하세요" />-->
     <AutoCompleteTextView
+        android:layout_marginTop="20dp"
         android:id="@+id/autoCompleteTextView"
         android:layout_width="300dp"
         android:layout_height="wrap_content"

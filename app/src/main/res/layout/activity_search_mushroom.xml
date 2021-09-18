@@ -14,79 +14,68 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/title"/>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ImageButton
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal">
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@color/limpidity"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/back2_1"/>
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="250dp"
-            android:background="@color/limpidity"
-            android:src="@drawable/home"/>
-    </LinearLayout>
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/limpidity"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/back2_1"/>
 
-    <SearchView
-        android:layout_width="340dp"
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView_show"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:gravity="center"
-        android:queryHint="음식을 입력하세요"
-        android:searchIcon="@drawable/search"
-        android:iconifiedByDefault="false"/>
+        android:layout_gravity="center"
+        android:textColorHighlight="#555555"
+        android:drawableRight="@drawable/search"
+        android:completionHint="음식을 입력하세요."
+        android:completionThreshold="1"/>
     <LinearLayout
         android:layout_width="370dp"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:background="@drawable/review_radius">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="30dp"
-        android:textColor="#000000"
-        android:text="@string/yes"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="1. 항암효과 Good"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:textColor="#000000"
-        android:gravity="center"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="2. 면역력 증가와 혈관 건강"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:textColor="#000000"
-        android:gravity="center"/>
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="* 양을 조금만 주어야 위에 \n 무리가 가지 않아요"
-        android:textSize="20sp"
-        android:layout_marginTop="70dp"
-        android:textColor="#000000"
-        android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:text="@string/yes"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. 항암효과 Good"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. 면역력 증가와 혈관 건강"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 양을 조금만 주어야 위에 \n 무리가 가지 않아요"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:gravity="center"/>
     </LinearLayout>
 
 </LinearLayout>
