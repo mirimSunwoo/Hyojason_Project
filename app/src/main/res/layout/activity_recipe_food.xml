@@ -10,9 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
         android:src="@drawable/title"
-        android:background="@color/orange"/>
+        android:background="#000000"/>
 
     <ImageButton
         android:id="@+id/btn_recipe_home"
@@ -24,6 +24,8 @@
         android:layout_marginBottom="10dp"
         android:src="@drawable/home"/>
     <ScrollView
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="600dp">
         <LinearLayout

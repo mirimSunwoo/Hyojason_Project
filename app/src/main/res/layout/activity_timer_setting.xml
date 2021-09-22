@@ -27,7 +27,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/timer_setting_radius2">
         <EditText
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="50dp"
             android:text="알람이름"
             android:textSize="20sp"
