@@ -21,7 +21,7 @@
         android:layout_marginTop="10dp"
         android:background="@color/limpidity"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/back2_1"/>
 
     <LinearLayout
@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/profile_background" />
+            android:src="@drawable/profileimage" />
     </LinearLayout>
 
     <EditText
@@ -71,7 +71,7 @@
             android:layout_height="65dp"
             android:layout_gravity="center"
             android:layout_marginLeft="40dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@drawable/btn_radius"
             android:gravity="center"

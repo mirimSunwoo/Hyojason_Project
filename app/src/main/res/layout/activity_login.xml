@@ -10,11 +10,12 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginBottom="20dp"
-        android:layout_gravity="center"
-        android:src="@drawable/animal"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/eatcare_rabbit"/>
     <EditText
+        android:layout_marginTop="20dp"
         android:paddingLeft="20dp"
         android:id="@+id/id_input"
         android:layout_width="340dp"
