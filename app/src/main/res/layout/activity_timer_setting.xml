@@ -45,7 +45,7 @@
             android:layout_gravity="center"
             android:layout_centerInParent="true"
             android:background="@drawable/timer_setting_radius"/>
-        <TextView
+        <Button
             android:id="@+id/btn_Check"
             android:layout_width="230dp"
             android:layout_height="50dp"
