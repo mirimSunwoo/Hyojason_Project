@@ -38,7 +38,7 @@
         android:layout_width="350dp"
         android:layout_height="480dp"
         android:background="@drawable/review_radius"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:orientation="vertical">
         <LinearLayout
