@@ -23,60 +23,67 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/mypage_btn"/>
-    <EditText
-        android:id="@+id/btn_menu_search"
-        android:layout_marginTop="10dp"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:drawableRight="@drawable/search"
-        android:gravity="center"
-        android:hint="음식을 입력하세요"/>
+
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="30dp"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/radius"
         android:backgroundTint="#FFC845"
-        android:layout_width="350dp"
-        android:layout_height="400dp">
+        android:orientation="vertical">
+
         <LinearLayout
-            android:layout_marginTop="40dp"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:orientation="horizontal">
+
             <ImageButton
                 android:id="@+id/btn_menu_best"
                 android:layout_width="150dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/menu_best"
-                android:background="#FFC845"/>
+                android:layout_marginLeft="25dp"
+                android:background="#FFC845"
+                android:src="@drawable/btn_best" />
+
+            <ImageButton
+                android:id="@+id/btn_menu_search"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#FFC845"
+                android:src="@drawable/btn_menu_search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
             <ImageButton
                 android:id="@+id/btn_menu_review"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/menu_comment"
-                android:background="#FFC845"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="40dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageButton
-                android:id="@+id/btn_menu_recipe"
-                android:layout_width="150dp"
-                android:layout_marginLeft="20dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/menu_recipe"
-                android:background="#FFC845"/>
+                android:layout_marginLeft="25dp"
+                android:background="#FFC845"
+                android:src="@drawable/btn_review" />
+
             <ImageButton
                 android:id="@+id/btn_menu_timer"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/menu_timer"
-                android:background="#FFC845"/>
+                android:background="#FFC845"
+                android:src="@drawable/menu_timer" />
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/advertisement"/>
 </LinearLayout>
