@@ -30,8 +30,7 @@
         android:text="feed timer"
         android:textStyle="bold"
         android:textColor="#878787"
-        android:textSize="30sp"
-        android:drawableLeft="@drawable/timer_rice"/>
+        android:textSize="30sp"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -84,8 +83,7 @@
         android:text="snack timer"
         android:textStyle="bold"
         android:textColor="#878787"
-        android:textSize="30sp"
-        android:drawableLeft="@drawable/timer_snack"/>
+        android:textSize="30sp" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginLeft="10dp"
