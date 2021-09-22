@@ -40,6 +40,8 @@ public class TimerSettingActivity extends AppCompatActivity {
         final TimePicker picker = (TimePicker)findViewById(R.id.tp_timepicker);
         picker.setIs24HourView(true);
 
+        btnBack = findViewById(R.id.timer_setting__back);
+        btnBack.setOnClickListener(btnHomeListener);
         //앞서 설정한 값으로 보여주기
         // 없으면 디폴트 값은 현재시간
         SharedPreferences sharedPreferences = getSharedPreferences("daily alarm", MODE_PRIVATE);
@@ -126,4 +128,12 @@ public class TimerSettingActivity extends AppCompatActivity {
         AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
 
     }
+    View.OnClickListener btnHomeListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    };
 }

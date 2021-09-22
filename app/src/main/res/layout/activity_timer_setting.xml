@@ -13,7 +13,7 @@
         android:src="@drawable/title"
         android:background="#FFC845"/>
     <ImageButton
-        android:id="@+id/btn_back"
+        android:id="@+id/timer_setting__back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/back2_1"
