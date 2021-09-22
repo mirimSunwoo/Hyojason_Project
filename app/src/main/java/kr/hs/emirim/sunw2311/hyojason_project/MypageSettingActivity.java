@@ -27,6 +27,7 @@ public class MypageSettingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mypage_setting);
 
         btnBack = findViewById(R.id.btn_setting_back);
+        btnBack.setOnClickListener(btnBackListener);
         changeBtn = findViewById(R.id.change_img);
         registerForContextMenu(changeBtn);
 

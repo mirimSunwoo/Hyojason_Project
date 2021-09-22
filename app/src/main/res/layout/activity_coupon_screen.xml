@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="쿠폰 코드를 입력해주세요"
+            android:hint="쿠폰 코드를 입력해주세요"
             android:textColor="#C6C4C4"/>
         <TextView
             android:id="@+id/btn_coupon2"
