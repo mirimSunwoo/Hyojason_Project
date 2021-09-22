@@ -42,7 +42,7 @@
                         android:layout_width="80dp"
                         android:layout_height="50dp"
                         android:layout_marginRight="200dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="25dp"
                         android:src="@drawable/mypage"/>
                     <ImageButton
                         android:layout_marginTop="10dp"
@@ -66,9 +66,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
                     android:paddingLeft="20dp"
-                    android:textSize="20dp"
-                    android:text="Name \n Value \n Age"/>
+                    android:textSize="15dp"
+                    android:text="Name \nValue \nAge"/>
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
@@ -130,6 +131,7 @@
                 android:paddingTop="5dp"
                 android:paddingBottom="10dp"
                 android:layout_width="130dp"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:src="@drawable/medal"
                 android:background="@drawable/radius"/>

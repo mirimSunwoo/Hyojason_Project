@@ -12,7 +12,7 @@
         android:paddingTop="20dp"
         android:paddingBottom="10dp"
         android:src="@drawable/title"
-        android:background="#000000"/>
+        android:background="@color/orange"/>
 
     <ImageButton
         android:id="@+id/btn_recipe_home"
