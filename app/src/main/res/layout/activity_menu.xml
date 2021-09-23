@@ -39,7 +39,7 @@
 
             <ImageButton
                 android:layout_marginTop="20dp"
-                android:id="@+id/btn_menu_best"
+                android:id="@+id/btn_menu_search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/menu_search"
@@ -47,7 +47,7 @@
 
             <ImageButton
                 android:layout_marginTop="20dp"
-                android:id="@+id/btn_menu_search"
+                android:id="@+id/btn_menu_best"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/menu_bestfood"

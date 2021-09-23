@@ -94,6 +94,7 @@
         android:background="@drawable/btn_radius"
         android:text="@string/join"
         android:textSize="30dp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:backgroundTint="#E16F4B"/>
 </LinearLayout>
