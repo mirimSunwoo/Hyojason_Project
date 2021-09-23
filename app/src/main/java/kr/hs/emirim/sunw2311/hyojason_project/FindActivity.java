@@ -17,8 +17,8 @@ public class FindActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_id_pass);
 
-        ActionBar abar = getSupportActionBar();
-        abar.hide();
+//        ActionBar abar = getSupportActionBar();
+//        abar.hide();
 
         TextView textCheck1, textCheck2;
         ImageButton BackButton;
