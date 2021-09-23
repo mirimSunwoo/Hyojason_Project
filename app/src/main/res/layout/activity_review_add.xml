@@ -39,7 +39,7 @@
         android:layout_width="350dp"
         android:layout_height="400dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/review_radius"
         android:orientation="vertical">
 
@@ -86,7 +86,8 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/radius"
         android:gravity="center"
-        android:text="확인"
+        android:text="CHECK"
         android:textSize="25dp"
+        android:textColor="@color/white"
         app:backgroundTint="#E16F4B" />
 </LinearLayout>
