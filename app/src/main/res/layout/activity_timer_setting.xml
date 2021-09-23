@@ -57,6 +57,7 @@
             android:gravity="center"
             android:text="확인"
             android:textSize="20sp"
+            android:textColor="@color/white"
             app:backgroundTint="#E16F4B" />
     </LinearLayout>
 

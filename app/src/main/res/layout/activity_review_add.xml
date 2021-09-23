@@ -80,14 +80,14 @@
     <Button
         android:id="@+id/review_add_confirm"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
-        android:background="@drawable/radius"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/btn_radius"
         android:gravity="center"
-        android:text="CHECK"
-        android:textSize="25dp"
+        android:text="확인"
+        android:textSize="20sp"
         android:textColor="@color/white"
         app:backgroundTint="#E16F4B" />
 </LinearLayout>

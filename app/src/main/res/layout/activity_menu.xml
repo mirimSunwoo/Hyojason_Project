@@ -18,71 +18,65 @@
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_gravity="right"
-        android:background="@drawable/radius"
         android:layout_marginRight="30dp"
         android:layout_marginTop="30dp"
         android:src="@drawable/mypage_btn"/>
 
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/radius"
         android:backgroundTint="#FFC845"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
             <ImageButton
+                android:layout_marginTop="20dp"
                 android:id="@+id/btn_menu_best"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:background="#FFC845"
-                android:src="@drawable/btn_best" />
+                android:src="@drawable/menu_search"
+                android:background="@color/orange"/>
 
             <ImageButton
+                android:layout_marginTop="20dp"
                 android:id="@+id/btn_menu_search"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFC845"
-                android:src="@drawable/btn_menu_search" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
+                android:src="@drawable/menu_bestfood"
+                android:background="@color/orange"/>
             <ImageButton
+                android:layout_marginTop="20dp"
                 android:id="@+id/btn_menu_review"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:background="#FFC845"
-                android:src="@drawable/btn_review" />
+                android:src="@drawable/menu_review"
+                android:background="@color/orange"/>
 
             <ImageButton
+                android:layout_marginTop="20dp"
                 android:id="@+id/btn_menu_timer"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFC845"
-                android:src="@drawable/menu_timer" />
+                android:src="@drawable/menu_timer"
+                android:background="@color/orange"/>
         </LinearLayout>
+
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/advertisement"/>
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:src="@drawable/advertisement"/>-->
 </LinearLayout>
