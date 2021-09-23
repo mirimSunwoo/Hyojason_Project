@@ -33,9 +33,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        ActionBar abar = getSupportActionBar();
-        abar.hide();
-
         idEdit = findViewById(R.id.id_input);
         passEdit = findViewById(R.id.pass_input);
 

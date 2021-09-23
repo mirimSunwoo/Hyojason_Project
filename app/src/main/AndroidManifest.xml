@@ -9,27 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hyojason_Project">
-        <activity android:name=".ManagerActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <receiver android:name=".AlarmReceiver"/>
         <activity android:name=".LoginActivity"/>
+        <receiver android:name=".AlarmReceiver"/>
+        <activity android:name=".ManagerActivity"/>
         <activity android:name=".MenuActivity"/>
         <activity android:name=".FindActivity"/>
         <activity android:name=".JoinActivity"/>
         <activity android:name=".BestActivity"/>
         <activity android:name=".BestExActivity"/>
         <activity android:name=".SearchActivity"/>
-        <activity android:name=".RecipeActivity"/>
+        <activity android:name=".SearchShowActivity"/>
         <activity android:name=".TimerActivity"/>
         <activity android:name=".TimerSettingActivity"/>
         <activity android:name=".ReviewAddActivity"/>
         <activity android:name=".ReviewActivity"/>
-        <activity android:name=".RecipeExActivity"/>
         <activity android:name=".MypageActivity"/>
         <activity android:name=".CouPonActivity"/>
         <activity android:name=".CouPonScreenActivity"/>

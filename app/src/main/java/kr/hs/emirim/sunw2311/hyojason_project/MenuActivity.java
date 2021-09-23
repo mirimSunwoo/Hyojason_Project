@@ -30,6 +30,7 @@ public class MenuActivity extends AppCompatActivity {
         btnTimer.setOnClickListener(btnTimerListener);
         btnSearch.setOnClickListener(btnSearchListener);
 
+
     }
     View.OnClickListener btnSearchListener = new View.OnClickListener() {
         @Override

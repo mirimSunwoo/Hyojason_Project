@@ -27,6 +27,7 @@
         android:text="START"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
 
         app:backgroundTint="#E16F4B" />
 </LinearLayout>

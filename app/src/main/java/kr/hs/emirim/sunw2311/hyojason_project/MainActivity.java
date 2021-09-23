@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ActionBar abar = getSupportActionBar();
-        abar.hide();
+//        ActionBar abar = getSupportActionBar();
+//        abar.hide();
 
         btnStart = findViewById(R.id.btn_start);
 

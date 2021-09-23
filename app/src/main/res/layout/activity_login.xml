@@ -72,6 +72,7 @@
         android:text="@string/btn_1"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:backgroundTint="#E16F4B" />
 
     <Button
