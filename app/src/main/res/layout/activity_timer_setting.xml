@@ -30,12 +30,12 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:text="알람이름"
+            android:hint="알람이름"
             android:textSize="20sp"
             android:layout_marginTop="25dp"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textColor="#C1BEBE"
+            android:textColor="#000000"
             android:background="@drawable/timer_setting_radius" />
         <TimePicker
             android:id="@+id/tp_timepicker"
