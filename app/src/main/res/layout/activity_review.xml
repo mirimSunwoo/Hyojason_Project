@@ -37,23 +37,23 @@
         android:iconifiedByDefault="false"/>
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="480dp"
-        android:background="@drawable/review_radius"
+        android:layout_height="420dp"
+        android:background="@drawable/setting_radius2"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="300dp"
-            android:layout_height="150dp"
+            android:layout_height="120dp"
             android:orientation="vertical"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
-            android:background="@drawable/review2_radius">
+            android:background="@drawable/setting_radius">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="삼계탕"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textColor="#000000"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"/>
@@ -68,23 +68,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="삼계탕 사랑해요!"
-                android:textSize="20dp"
+                android:textSize="10dp"
                 android:textColor="#000000"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="8dp"/>
         </LinearLayout>
             <LinearLayout
                 android:layout_width="300dp"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:orientation="vertical"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/review2_radius">
+                android:background="@drawable/setting_radius">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="삼계탕"
-                    android:textSize="30dp"
+                    android:text="익힌 소고기"
+                    android:textSize="20dp"
                     android:textColor="#000000"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"/>
@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="삼계탕 너무 맛있어요!"
-                    android:textSize="20dp"
+                    android:textSize="10dp"
                     android:textColor="#000000"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="8dp"/>
