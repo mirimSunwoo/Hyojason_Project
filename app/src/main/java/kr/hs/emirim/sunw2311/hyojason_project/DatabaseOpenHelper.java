@@ -21,13 +21,13 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
         Log.i("tag","db 생성_db가 없을때만 최초로 실행함");
         createTable(db);
     }
-
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVer, int newVer) {
+        db.execSQL("drop table if exists joinTB");
+        onCreate(db);
     }
     public void createTable(SQLiteDatabase db) {
-        String sql = "CREATE TABLE " + tableName + "(id text, pw text)";
+        String sql = "create table joinTB(petName char(20), id char(20) primary key, password char(30), email char(30))";
         try {
             db.execSQL(sql);
         }catch (SQLException e) {
