@@ -47,4 +47,5 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
             db.endTransaction();
         }
     }
+
 }
