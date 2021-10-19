@@ -36,11 +36,11 @@
         android:iconifiedByDefault="false"/>
 
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_width="330dp"
+        android:layout_height="450dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:background="@drawable/review_radius"
+        android:background="@drawable/setting_radius2"
         android:orientation="vertical">
 
         <EditText
@@ -49,9 +49,10 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/radius"
+            android:background="@drawable/setting_radius"
             android:gravity="center"
             android:text="삼계탕"
+            android:textStyle="bold"
             android:textColor="#000000"
             android:textSize="30dp" />
 
@@ -69,25 +70,24 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/radius"
+            android:background="@drawable/setting_radius"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="리뷰작성..."
             android:textColor="#959595"
             android:textSize="25dp" />
+        <Button
+            android:id="@+id/review_add_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_radius"
+            android:gravity="center"
+            android:text="확인"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:backgroundTint="#E16F4B" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/review_add_confirm"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="22dp"
-        android:background="@drawable/btn_radius"
-        android:gravity="center"
-        android:text="확인"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        app:backgroundTint="#E16F4B" />
 </LinearLayout>
