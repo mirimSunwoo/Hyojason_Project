@@ -22,7 +22,6 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
         createTable(db);
     }
 
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVer, int newVer) {
     }
