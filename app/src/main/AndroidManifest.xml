@@ -15,9 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true"></service>
 
         <activity android:name=".LoginActivity"/>
-        <receiver android:name=".AlarmReceiver"/>
+        <receiver android:name=".Alarm_Receiver"/>
         <activity android:name=".ManagerActivity"/>
         <activity android:name=".MenuActivity"/>
         <activity android:name=".FindActivity"/>
