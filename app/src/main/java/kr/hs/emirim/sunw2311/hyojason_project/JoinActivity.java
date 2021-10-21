@@ -137,7 +137,7 @@ public class JoinActivity extends AppCompatActivity {
     }
     public class MyDBHelper extends SQLiteOpenHelper {
         public MyDBHelper(Context context){
-            super(context,"joinTB",null, 2);
+            super(context,"joinTB",null, 3);
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
