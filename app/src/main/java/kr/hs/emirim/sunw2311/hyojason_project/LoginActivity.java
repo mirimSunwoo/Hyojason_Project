@@ -17,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    int version = 2;
+    int version = 3;
     DatabaseOpenHelper helper;
     SQLiteDatabase database;
 

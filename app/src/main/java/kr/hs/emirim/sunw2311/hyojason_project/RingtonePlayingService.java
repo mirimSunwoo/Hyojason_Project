@@ -61,8 +61,8 @@ public class RingtonePlayingService extends Service {
         // 알람음 재생 X , 알람음 시작 클릭
         if(!this.isRunning && startId == 1) {
 
-            mediaPlayer = MediaPlayer.create(this,R.raw.alarmmusic);
-            mediaPlayer.start();
+//            mediaPlayer = MediaPlayer.create(this,R.raw.alarmmusic);
+//            mediaPlayer.start();
 
             this.isRunning = true;
             this.startId = 0;
