@@ -25,6 +25,7 @@ public class ReviewAddActivity extends AppCompatActivity {
     EditText Name, Info;
     private RatingBar ratingBar;
     private TextView Star;
+    float r_rating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class ReviewAddActivity extends AppCompatActivity {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
                 Star.setText(""+rating);
+                r_rating = rating;
             }
         });
         dbHelper = new MyDBHelper(this);
@@ -56,8 +58,8 @@ public class ReviewAddActivity extends AppCompatActivity {
                 db = dbHelper.getWritableDatabase();
                 db.execSQL("INSERT INTO reviewTB VALUES (" +
                         "'" + Name.getText().toString() + "' ,'"
-                        + Info.getText().toString() + "' ,'"
-                        + Star.getText().toString()  + "');");
+                        + r_rating + "' ,'"
+                        + Info.getText().toString()  + "');");
                 db.close();
                 Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
                 selectDB();
@@ -69,7 +71,7 @@ public class ReviewAddActivity extends AppCompatActivity {
     }
 
     public void selectDB(){
-        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        db = dbHelper.getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from reviewTB;", null);
         String Name = "음식이름\r\n_____________\r\n";
         String Star = "별점\r\n_____________\r\n";
@@ -84,7 +86,7 @@ public class ReviewAddActivity extends AppCompatActivity {
     }
     public class MyDBHelper extends SQLiteOpenHelper {
         public MyDBHelper(Context context){
-            super(context,"reviewTB",null, 3);
+            super(context,"reviewTB",null, 6);
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
