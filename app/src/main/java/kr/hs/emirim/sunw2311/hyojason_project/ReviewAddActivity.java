@@ -35,17 +35,17 @@ public class ReviewAddActivity extends AppCompatActivity {
         btnBack.setOnClickListener(btnBackListener);
 
         btnConfirm = findViewById(R.id.review_add_confirm);
-        btnConfirm.setOnClickListener(btnConfirmListener);
 
         Name = findViewById(R.id.EditText_reviewName);
         Info = findViewById(R.id.EditText_reviewInfo);
 
         ratingBar = findViewById(R.id.review_ratingBar);
         Star=findViewById(R.id.review_textview);
+
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-//                textView.setText(""+rating);
+                Star.setText(""+rating);
             }
         });
         dbHelper = new MyDBHelper(this);
@@ -67,37 +67,20 @@ public class ReviewAddActivity extends AppCompatActivity {
             }
         });
     }
-    View.OnClickListener btnBackListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), ReviewActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    };
-    View.OnClickListener btnConfirmListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Toast.makeText(getApplicationContext(),"추가되었습니다.",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(getApplicationContext(), ReviewActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    };
 
     public void selectDB(){
-        SQLiteDatabase db1 = dbHelper.getReadableDatabase();
-        Cursor cursor = db1.rawQuery("select * from reviewTB;", null);
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from reviewTB;", null);
         String Name = "음식이름\r\n_____________\r\n";
         String Star = "별점\r\n_____________\r\n";
         String Info = "리뷰\r\n_____________\r\n";
         while(cursor.moveToNext()){
-            Name+= cursor.getString(0) + "\r\n";
+            Name+=cursor.getString(0) + "\r\n";
             Star+=cursor.getString(1) + "\r\n";
             Info+=cursor.getString(2) + "\r\n";
         }
         cursor.close();
-        db1.close();
+        db.close();
     }
     public class MyDBHelper extends SQLiteOpenHelper {
         public MyDBHelper(Context context){
@@ -113,4 +96,12 @@ public class ReviewAddActivity extends AppCompatActivity {
             onCreate(db);
         }
     }
+    View.OnClickListener btnBackListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), ReviewActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    };
 }
