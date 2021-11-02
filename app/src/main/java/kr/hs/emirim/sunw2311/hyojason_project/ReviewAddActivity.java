@@ -24,8 +24,7 @@ public class ReviewAddActivity extends AppCompatActivity {
     Button btnConfirm;
     EditText Name, Info;
     private RatingBar ratingBar;
-    private TextView Star;
-    float r_rating;
+    Float Star;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +40,11 @@ public class ReviewAddActivity extends AppCompatActivity {
         Info = findViewById(R.id.EditText_reviewInfo);
 
         ratingBar = findViewById(R.id.review_ratingBar);
-        Star=findViewById(R.id.review_textview);
 
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                Star.setText(""+rating);
-                r_rating = rating;
+                Star = rating;
             }
         });
         dbHelper = new MyDBHelper(this);
@@ -58,7 +55,7 @@ public class ReviewAddActivity extends AppCompatActivity {
                 db = dbHelper.getWritableDatabase();
                 db.execSQL("INSERT INTO reviewTB VALUES (" +
                         "'" + Name.getText().toString() + "' ,'"
-                        + r_rating + "' ,'"
+                        + Star + "' ,'"
                         + Info.getText().toString()  + "');");
                 db.close();
                 Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
@@ -86,11 +83,11 @@ public class ReviewAddActivity extends AppCompatActivity {
     }
     public class MyDBHelper extends SQLiteOpenHelper {
         public MyDBHelper(Context context){
-            super(context,"reviewTB",null, 6);
+            super(context,"reviewTB",null, 8);
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("create table reviewTB(Name char(20), Star char(20) , Info char(100));");
+            db.execSQL("create table reviewTB(Name char(20), Star rear, Info char(100));");
         }
         @Override
         public void onUpgrade(SQLiteDatabase db, int i, int i1) {
