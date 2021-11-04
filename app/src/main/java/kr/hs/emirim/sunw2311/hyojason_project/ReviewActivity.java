@@ -4,11 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 public class ReviewActivity extends AppCompatActivity {
     ImageButton btnHome, btnReviewAdd;
+    ListView list;
+    ArrayList<MyReviewData> arrData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +25,16 @@ public class ReviewActivity extends AppCompatActivity {
 
         btnReviewAdd = findViewById(R.id.btn_review_add);
         btnReviewAdd.setOnClickListener(btnReviewAddListener);
+
+        setData();
+
+        list= (ListView)findViewById(R.id.rvListView);
+    }
+    private void setData(){
+        arrData = new ArrayList<MyReviewData>();
+        arrData.add(new MyReviewData("살코기", "맛없어", "Rating"));
+//        arrData.add(new MyReviewData(R.drawable.ic_launcher, "쥬얼리", "010-3333-4444", "juerly@daum.net"));
+//        arrData.add(new MyReviewData(R.drawable.ic_launcher, "시크릿", "010-5555-6666", "secret@paran.com"));
     }
     View.OnClickListener btnHomeListener = new View.OnClickListener() {
         @Override
