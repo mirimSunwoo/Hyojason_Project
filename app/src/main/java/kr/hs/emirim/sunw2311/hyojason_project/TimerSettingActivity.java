@@ -29,7 +29,7 @@ import java.util.Locale;
 public class TimerSettingActivity extends AppCompatActivity {
     TimePicker timePicker;
     Button check_btn;
-    Intent intent2;
+    ImageButton set_back;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -39,6 +39,7 @@ public class TimerSettingActivity extends AppCompatActivity {
 
         timePicker = findViewById(R.id.tp_timepicker);
         check_btn = findViewById(R.id.btn_Check);
+        set_back = findViewById(R.id.timer_setting__back);
 
         check_btn.setOnClickListener(v -> {
             Calendar calendar = Calendar.getInstance();
@@ -63,6 +64,14 @@ public class TimerSettingActivity extends AppCompatActivity {
                 finish();
 
                 Toast.makeText(TimerSettingActivity.this,"알람이 저장되었습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        set_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
