@@ -24,7 +24,7 @@ public class ReviewAddActivity extends AppCompatActivity {
     Button btnConfirm;
     EditText Name, Info;
     private RatingBar ratingBar;
-    private TextView Star;
+    Float Star;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +40,11 @@ public class ReviewAddActivity extends AppCompatActivity {
         Info = findViewById(R.id.EditText_reviewInfo);
 
         ratingBar = findViewById(R.id.review_ratingBar);
-        Star=findViewById(R.id.review_textview);
 
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                Star.setText(""+rating);
+                Star = rating;
             }
         });
         dbHelper = new MyDBHelper(this);
@@ -56,8 +55,8 @@ public class ReviewAddActivity extends AppCompatActivity {
                 db = dbHelper.getWritableDatabase();
                 db.execSQL("INSERT INTO reviewTB VALUES (" +
                         "'" + Name.getText().toString() + "' ,'"
-                        + Info.getText().toString() + "' ,'"
-                        + Star.getText().toString()  + "');");
+                        + Star + "' ,'"
+                        + Info.getText().toString()  + "');");
                 db.close();
                 Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
                 selectDB();
@@ -69,7 +68,7 @@ public class ReviewAddActivity extends AppCompatActivity {
     }
 
     public void selectDB(){
-        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        db = dbHelper.getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from reviewTB;", null);
         String Name = "음식이름\r\n_____________\r\n";
         String Star = "별점\r\n_____________\r\n";
@@ -84,11 +83,11 @@ public class ReviewAddActivity extends AppCompatActivity {
     }
     public class MyDBHelper extends SQLiteOpenHelper {
         public MyDBHelper(Context context){
-            super(context,"reviewTB",null, 3);
+            super(context,"reviewTB",null, 8);
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("create table reviewTB(Name char(20), Star char(20) , Info char(100));");
+            db.execSQL("create table reviewTB(Name char(20), Star rear, Info char(100));");
         }
         @Override
         public void onUpgrade(SQLiteDatabase db, int i, int i1) {
