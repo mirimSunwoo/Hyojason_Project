@@ -41,41 +41,31 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/setting_radius"
+            android:background="@drawable/setting_radius2"
             android:backgroundTint="#FFC845"
             android:layout_width="match_parent"
-            android:layout_height="200dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/setting_radius"
-                android:text="breakfast"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#666666"
-                android:drawableRight="@drawable/btn_minus"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/setting_radius"
-                android:text="lunch"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#666666"
-                android:drawableRight="@drawable/btn_minus"/>
+            android:layout_height="250dp">
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="아침밥 주기"
+                android:textSize="20sp"
+                android:background="@drawable/edit_radius"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="점심밥 주기"
+                android:textSize="20sp"
+                android:background="@drawable/edit_radius"/>
             <ImageButton
                 android:id="@+id/btn_plus_feed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:src="@drawable/btn_plus"
                 android:background="@android:color/transparent"/>
         </LinearLayout>
@@ -96,40 +86,31 @@
             android:background="@drawable/setting_radius2"
             android:backgroundTint="#FFC845"
             android:layout_width="match_parent"
-            android:layout_height="200dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/setting_radius"
-                android:text="breakfast"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#666666"
-                android:drawableRight="@drawable/btn_minus"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/setting_radius"
-                android:text="lunch"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#666666"
-                android:drawableRight="@drawable/btn_minus"/>
+            android:layout_height="250dp">
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="영양제 주기"
+                android:textSize="20sp"
+                android:background="@drawable/edit_radius"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="저녁밥 주기"
+                android:textSize="20sp"
+                android:background="@drawable/edit_radius"/>
             <ImageButton
                 android:id="@+id/btn_plus_snack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:src="@drawable/btn_plus"
                 android:background="@android:color/transparent"/>
+
         </LinearLayout>
     </LinearLayout>
 

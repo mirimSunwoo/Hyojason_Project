@@ -7,6 +7,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -30,6 +33,9 @@ public class TimerSettingActivity extends AppCompatActivity {
     TimePicker timePicker;
     Button check_btn;
     ImageButton set_back;
+    Ringtone rt;
+    PendingIntent pendingIntent;
+    AlarmManager alarm_manager;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -41,30 +47,54 @@ public class TimerSettingActivity extends AppCompatActivity {
         check_btn = findViewById(R.id.btn_Check);
         set_back = findViewById(R.id.timer_setting__back);
 
+        alarm_manager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        final Calendar calendar = Calendar.getInstance();
+        // 알람리시버 intent 생성
+        final Intent my_intent = new Intent(TimerSettingActivity.this, Alarm_Receiver.class);
+
         check_btn.setOnClickListener(v -> {
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTimeInMillis(System.currentTimeMillis());
+
+//            calendar.setTimeInMillis(System.currentTimeMillis());
             int hour = timePicker.getHour();
             int minute = timePicker.getMinute();
-            calendar.get(Calendar.HOUR_OF_DAY);
+            calendar.set(Calendar.HOUR_OF_DAY, hour);
             calendar.set(Calendar.MINUTE, minute);
+            Toast.makeText(TimerSettingActivity.this,"Alarm 예정 " + hour + "시 " + minute + "분",Toast.LENGTH_SHORT).show();
 
-            if (calendar.before(Calendar.getInstance())){
+            my_intent.putExtra("state","alarm on");
+            pendingIntent = PendingIntent.getBroadcast(TimerSettingActivity.this, 0, my_intent,
+                    PendingIntent.FLAG_UPDATE_CURRENT);
+
+            // 알람셋팅
+            alarm_manager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                    pendingIntent);
+            Intent intent2 = new Intent(getApplicationContext(), TimerActivity.class);
+            startActivity(intent2);
+            finish();
+
+            /*if (calendar.before(Calendar.getInstance())){
                 calendar.add(Calendar.DATE, 1);
             }
-            AlarmManager alarmManager = (AlarmManager)this.getSystemService(Context.ALARM_SERVICE);
-            if(alarmManager != null){
+
+            if(alarm_manager != null){
                 Intent intent = new Intent(this, Alarm_Receiver.class);
                 PendingIntent alarmIntent = PendingIntent.getBroadcast(this, 1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, alarmIntent);
+                alarm_manager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, alarmIntent);
 
-                Intent intent2 = new Intent(getApplicationContext(), TimerActivity.class);
-                startActivity(intent2);
-                finish();
+
 
                 Toast.makeText(TimerSettingActivity.this,"알람이 저장되었습니다.", Toast.LENGTH_SHORT).show();
-            }
+//                check_btn.setOnClickListener(new View.OnClickListener() {
+////                    @Override
+////                    public void onClick(View v) {
+////                        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+////                        rt = RingtoneManager.getRingtone(getApplicationContext(),notification);
+////                        rt.play();
+////
+////                    }
+//                });
+            }*/
         });
         set_back.setOnClickListener(new View.OnClickListener() {
             @Override
