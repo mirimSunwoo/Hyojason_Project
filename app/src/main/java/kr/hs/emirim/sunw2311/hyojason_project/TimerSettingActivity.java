@@ -68,6 +68,9 @@ public class TimerSettingActivity extends AppCompatActivity {
             // 알람셋팅
             alarm_manager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
                     pendingIntent);
+            Intent intent2 = new Intent(getApplicationContext(), TimerActivity.class);
+            startActivity(intent2);
+            finish();
 
             /*if (calendar.before(Calendar.getInstance())){
                 calendar.add(Calendar.DATE, 1);
@@ -79,9 +82,7 @@ public class TimerSettingActivity extends AppCompatActivity {
 
                 alarm_manager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, alarmIntent);
 
-                Intent intent2 = new Intent(getApplicationContext(), TimerActivity.class);
-                startActivity(intent2);
-                finish();
+
 
                 Toast.makeText(TimerSettingActivity.this,"알람이 저장되었습니다.", Toast.LENGTH_SHORT).show();
 //                check_btn.setOnClickListener(new View.OnClickListener() {
