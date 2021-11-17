@@ -40,5 +40,9 @@ public class Review_Adapter extends SimpleCursorAdapter {
         textView.setText(txt);
 
         return (v);
+
+//        선생님의 꿀팁
+//        Array List VIew에 Database에 있는 것들을 add해서 순차적으로 넣는다
+//        옛날에 했던 코드를 참고할것(아이돌 넣고 꺼내기)
     }
 }
