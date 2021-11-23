@@ -17,7 +17,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ReviewAddActivity extends AppCompatActivity {
-//    JoinActivity.MyDBHelper dbHelper;
+    public static String reviewTB;
+    //    JoinActivity.MyDBHelper dbHelper;
     MyDBHelper dbHelper;
     SQLiteDatabase db ;
     ImageButton btnBack;
