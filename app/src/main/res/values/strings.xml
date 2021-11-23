@@ -10,4 +10,15 @@
     <string name="in_email">E-mail</string>
     <string name="yes">Yes!</string>
     <string name="no">No!</string>
+
+    <string name="food1">연어당근 구이</string>
+    <string name="food2">단호박두부죽</string>
+    <string name="food3">닭가슴살치즈볼</string>
+    <string name="food4">황태국</string>
+    <string name="food5">닭죽</string>
+    <string name="food6">찹스테이크</string>
+    <string name="food7">채소 달걀찜</string>
+    <string name="food8">닭가슴살 져키</string>
+    <string name="food9">고구마칩</string>
+    <string name="food10">바나나칩</string>
 </resources>
