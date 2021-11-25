@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Gallery;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class BestActivity extends AppCompatActivity {
     ImageButton btnBack;
@@ -20,7 +21,8 @@ public class BestActivity extends AppCompatActivity {
         setTitle("BEST FOOD");
         ImageView imgvLarge = findViewById(R.id.imgv_large);
         Gallery gallery = findViewById(R.id.gallery1);
-        GalleryAdapter adapter = new GalleryAdapter(this, imgvLarge);
+        TextView infoLarge = findViewById(R.id.textv_large);
+        GalleryAdapter adapter = new GalleryAdapter(this, imgvLarge, infoLarge);
         gallery.setAdapter(adapter);
 
         btnBack = findViewById(R.id.btn_best_back);
