@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(checkBox.isChecked()){
-                    Toast.makeText(LoginActivity.this, "자동 로그인", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(LoginActivity.this, "자동 로그인", Toast.LENGTH_SHORT).show();
 
                     String ID = idEdit.getText().toString();
                     String PW = passEdit.getText().toString();
