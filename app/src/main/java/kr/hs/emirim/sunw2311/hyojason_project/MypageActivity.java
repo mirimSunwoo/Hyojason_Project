@@ -36,15 +36,7 @@ public class MypageActivity extends AppCompatActivity {
             }
         });
 
-        btnCoupon = findViewById(R.id.coupon);
-        btnCoupon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CouPonActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
         btnLogout = findViewById(R.id.btn_mypage_logout);
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override

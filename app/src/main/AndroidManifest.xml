@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kr.hs.emirim.sunw2311.hyojason_project">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -9,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hyojason_Project">
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -18,24 +22,20 @@
 
         <receiver android:name=".Alarm_Receiver"/>
 
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".MainActivity"/>
         <receiver android:name=".Alarm_Receiver"/>
         <activity android:name=".ManagerActivity"/>
         <activity android:name=".MenuActivity"/>
-        <activity android:name=".FindActivity"/>
         <activity android:name=".JoinActivity"/>
         <activity android:name=".BestActivity"/>
         <activity android:name=".BestExActivity"/>
         <activity android:name=".SearchActivity"/>
         <activity android:name=".SearchShowActivity"/>
-        <activity android:name=".TimerActivity"/>
         <activity android:name=".TimerSettingActivity"/>
         <activity android:name=".ReviewAddActivity"/>
         <activity android:name=".ReviewActivity"/>
         <activity android:name=".MypageActivity"/>
-        <activity android:name=".CouPonActivity"/>
-        <activity android:name=".CouPonScreenActivity"/>
-        <activity android:name=".CouPonFinishActivity"/>
         <activity android:name=".MypageSettingActivity"/>
+        <activity android:name=".TimerActivity"/>
     </application>
 </manifest>
