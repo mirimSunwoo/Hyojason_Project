@@ -64,16 +64,18 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/cat" />
+                    android:src="@drawable/cat"/>
                 <TextView
+                    android:id="@+id/nag_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
                     android:paddingLeft="20dp"
-                    android:textSize="15dp"
-                    android:text="name \nvalue \nage"/>
+                    android:textSize="15dp" />
+
             </LinearLayout>
             <TextView
+                android:id="@+id/intro_view"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
@@ -82,8 +84,7 @@
                 android:background="@drawable/radius"
                 android:backgroundTint="#CFCFCF"
                 android:paddingLeft="20dp"
-                android:paddingTop="15dp"
-                android:text="소개글을 입력해주세요" />
+                android:paddingTop="15dp" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
