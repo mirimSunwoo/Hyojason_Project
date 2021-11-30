@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MypageActivity extends AppCompatActivity {
     ImageButton btnHome,btnSetting;
     Button btnLogout, btnManager;
-    TextView btnCoupon;
+    TextView introView, nagView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,9 @@ public class MypageActivity extends AppCompatActivity {
 
         btnHome = findViewById(R.id.btn_mypage_home);
         btnHome.setOnClickListener(btnHomeListener);
+
+        introView = findViewById(R.id.intro_view);
+        nagView = findViewById(R.id.nag_view);
 
         btnSetting = findViewById(R.id.btn_mypage_setting);
         btnSetting.setOnClickListener(btnSettingListener);
@@ -35,7 +38,16 @@ public class MypageActivity extends AppCompatActivity {
                 finish();
             }
         });
+        Intent intent = getIntent();
 
+        Bundle bundle = intent.getExtras();
+        String name = intent.getStringExtra("name");
+        String age = intent.getStringExtra("age");
+        String gender = intent.getStringExtra("gender");
+        String intro = intent.getStringExtra("intro");
+
+        nagView.setText(name + "\n" + age + "\n" + gender + "\n");
+        introView.setText(intro);
 
         btnLogout = findViewById(R.id.btn_mypage_logout);
         btnLogout.setOnClickListener(new View.OnClickListener() {

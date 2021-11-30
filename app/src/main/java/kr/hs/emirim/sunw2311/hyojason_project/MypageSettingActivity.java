@@ -17,6 +17,7 @@ import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -29,6 +30,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -37,6 +40,8 @@ import java.text.BreakIterator;
 public class MypageSettingActivity extends AppCompatActivity {
     ImageButton btnBack, changebtn;
     ImageView changeimg;
+    TextView chlickBtn, finishBtn;
+    EditText TextInputEditText_name, TextInputEditText_gender, TextInputEditText_age, TextInputEditText_intro;
 
 
     @Override
@@ -48,6 +53,36 @@ public class MypageSettingActivity extends AppCompatActivity {
         btnBack.setOnClickListener(btnBackListener);
         changeimg = findViewById(R.id.change_img);
         changebtn = findViewById(R.id.change_btn);
+
+        chlickBtn = findViewById(R.id.btn_change);
+        finishBtn = findViewById(R.id.btn_finish);
+
+        TextInputEditText_name = findViewById(R.id.name_input);
+        TextInputEditText_gender = findViewById(R.id.gender_input);
+        TextInputEditText_age = findViewById(R.id.age_input);
+        TextInputEditText_intro = findViewById(R.id.intro_id);
+
+        chlickBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MypageSettingActivity.this, MypageActivity.class);
+                String name = TextInputEditText_name.getText().toString();
+                String gender = TextInputEditText_gender.getText().toString();
+                String age = TextInputEditText_age.getText().toString();
+                String intro = TextInputEditText_intro.getText().toString();
+
+                Bundle bundle = new Bundle();
+                bundle.putString("name", name);
+                bundle.putString("age", age);
+                bundle.putString("gender", gender);
+                bundle.putString("intro", intro);
+
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+
+
         checkSelfPermission();
         changeimg = findViewById(R.id.change_img);
         changeimg.setOnClickListener(new View.OnClickListener() {
@@ -129,4 +164,5 @@ public class MypageSettingActivity extends AppCompatActivity {
             finish();
         }
     };
+
 }
