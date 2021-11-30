@@ -47,7 +47,7 @@ public class MypageSettingActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.btn_setting_back);
         btnBack.setOnClickListener(btnBackListener);
         changeimg = findViewById(R.id.change_img);
-        changebtn = findViewById(R.id.change_btn);
+//        changebtn = findViewById(R.id.change_btn);
         checkSelfPermission();
         changeimg = findViewById(R.id.change_img);
         changeimg.setOnClickListener(new View.OnClickListener() {

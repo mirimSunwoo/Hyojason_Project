@@ -39,13 +39,35 @@
         android:layout_width="350dp"
         android:layout_height="420dp"
         android:background="@drawable/setting_radius2"
-        android:layout_marginTop="40dp"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:orientation="vertical">
-        <ListView
-            android:id="@+id/reivew_listview"
+<!--        <ListView-->
+<!--            android:id="@+id/reivew_listview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:id="@+id/review_name"/>
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:id="@+id/review_star"/>
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:id="@+id/review_info"/>
+        </LinearLayout>
         <ImageButton
             android:id="@+id/btn_review_add"
             android:layout_width="50dp"

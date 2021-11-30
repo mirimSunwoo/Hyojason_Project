@@ -42,7 +42,7 @@ public class ReviewActivity extends AppCompatActivity {
 
         setData();
 
-        list= (ListView)findViewById(R.id.reivew_listview);
+//        list= (ListView)findViewById(R.id.reivew_listview);
         arrData = new ArrayList<HashMap<String,String>>();
     }
     private void setData(){

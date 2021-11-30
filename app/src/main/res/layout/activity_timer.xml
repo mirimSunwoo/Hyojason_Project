@@ -21,12 +21,10 @@
         android:layout_marginTop="10dp"
         android:background="@color/limpidity"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
         android:src="@drawable/home"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
@@ -44,12 +42,12 @@
             android:background="@drawable/setting_radius2"
             android:backgroundTint="#FFC845"
             android:layout_width="match_parent"
-            android:layout_height="250dp">
+            android:layout_height="220dp">
             <Button
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="25dp"
                 android:text="아침밥 주기"
                 android:textSize="20sp"
                 android:background="@drawable/edit_radius"/>
@@ -57,7 +55,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="15dp"
                 android:text="점심밥 주기"
                 android:textSize="20sp"
                 android:background="@drawable/edit_radius"/>
@@ -86,12 +84,12 @@
             android:background="@drawable/setting_radius2"
             android:backgroundTint="#FFC845"
             android:layout_width="match_parent"
-            android:layout_height="250dp">
+            android:layout_height="220dp">
             <Button
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="25dp"
                 android:text="영양제 주기"
                 android:textSize="20sp"
                 android:background="@drawable/edit_radius"/>
@@ -99,7 +97,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="25dp"
                 android:text="저녁밥 주기"
                 android:textSize="20sp"
                 android:background="@drawable/edit_radius"/>
