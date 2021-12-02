@@ -42,9 +42,9 @@ public class ReviewAddActivity extends AppCompatActivity {
 
         ratingBar = findViewById(R.id.review_ratingBar);
 
-        editNameResult = findViewById(R.id.review_name);
-        editStarResult = findViewById(R.id.review_star);
-        editInfoResult = findViewById(R.id.review_info);
+//        editNameResult = findViewById(R.id.review_name);
+//        editStarResult = findViewById(R.id.review_star);
+//        editInfoResult = findViewById(R.id.review_info);
 
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
@@ -57,29 +57,16 @@ public class ReviewAddActivity extends AppCompatActivity {
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                db = dbHelper.getWritableDatabase();
+                db = dbHelper.getWritableDatabase();
                 db = dbHelper.getReadableDatabase();
-//                db.execSQL("INSERT INTO reviewTB VALUES (" +
-//                        "'" + Name.getText().toString() + "' ,'"
-//                        + Star + "' ,'"
-//                        + Info.getText().toString()  + "');");
-                Cursor cursor = db.rawQuery("select * from reviewTB;",null);
-                String strName = "음식 이름\r\n_____________\r\n";
-                String strStar = "음식 별점\r\n_____________\r\n";
-                String strInfo = "음식 설명\r\n_____________\r\n";
-                while(cursor.moveToNext()){
-                    strName+= cursor.getString(0) + "\r\n";
-                    strStar+=cursor.getInt(1) + "\r\n";
-                    strInfo+=cursor.getInt(2) + "\r\n";
-                }
-                editNameResult.setText(strName);
-                editStarResult.setText(strStar);
-                editInfoResult.setText(strInfo);
-                cursor.close();
+                db.execSQL("INSERT INTO reviewTB VALUES (" +
+                        "'" + Name.getText().toString() + "' ,'"
+                        + Star+ "' ,'"
+                        + Info.getText().toString()  + "');");
                 db.close();
-//                Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
-//                selectDB();
-//                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
+                selectDB();
+//                Intent intent = new Intent(getApplicationContext(), ReviewActivity.class);
 //                startActivity(intent);
 //                finish();
             }
@@ -94,13 +81,13 @@ public class ReviewAddActivity extends AppCompatActivity {
         String Info = "리뷰\r\n_____________\r\n";
         while(cursor.moveToNext()){
             Name+=cursor.getString(0) + "\r\n";
-            Star+=cursor.getString(1) + "\r\n";
+            Star+=cursor.getInt(1) + "\r\n";
             Info+=cursor.getString(2) + "\r\n";
         }
         cursor.close();
         db.close();
     }
-    public class MyDBHelper extends SQLiteOpenHelper {
+    public static class MyDBHelper extends SQLiteOpenHelper {
         public MyDBHelper(Context context){
             super(context,"reviewTB",null, 8);
         }
