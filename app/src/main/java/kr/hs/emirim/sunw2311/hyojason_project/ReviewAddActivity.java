@@ -72,10 +72,10 @@ public class ReviewAddActivity extends AppCompatActivity {
                     strStar+=cursor.getInt(1) + "\r\n";
                     strInfo+=cursor.getInt(2) + "\r\n";
                 }
-//                editNameResult.setText(strName);
-//                editStarResult.setText(strStar);
-//                editInfoResult.setText(strInfo);
-//                cursor.close();
+                editNameResult.setText(strName);
+                editStarResult.setText(strStar);
+                editInfoResult.setText(strInfo);
+                cursor.close();
                 db.close();
 //                Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
 //                selectDB();
