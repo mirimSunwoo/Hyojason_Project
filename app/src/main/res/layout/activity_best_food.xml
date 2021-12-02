@@ -26,26 +26,36 @@
         android:spacing="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:background="@drawable/setting_radius"
-            android:id="@+id/imgv_large"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="375dp"
+            android:layout_height="1300dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="15dp"
-            android:textSize="15dp"
-            android:id="@+id/textv_large"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"/>
-    </FrameLayout>
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/imgv_large"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/setting_radius" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:id="@+id/textv_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+        </FrameLayout>
+    </LinearLayout>
 </LinearLayout>

@@ -40,5 +40,6 @@
         <activity android:name=".MypageActivity"/>
         <activity android:name=".MypageSettingActivity"/>
         <activity android:name=".TimerActivity"/>
+        <activity android:name=".ManagerPasswordActivity"/>
     </application>
 </manifest>

@@ -52,7 +52,7 @@ public class MypageSettingActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.btn_setting_back);
         btnBack.setOnClickListener(btnBackListener);
         changeimg = findViewById(R.id.change_img);
-        changebtn = findViewById(R.id.change_btn);
+//        changebtn = findViewById(R.id.btn_change);
 
         chlickBtn = findViewById(R.id.btn_change);
         finishBtn = findViewById(R.id.btn_finish);
@@ -164,5 +164,4 @@ public class MypageSettingActivity extends AppCompatActivity {
             finish();
         }
     };
-
 }

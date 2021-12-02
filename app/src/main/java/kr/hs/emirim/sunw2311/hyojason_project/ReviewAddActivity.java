@@ -23,7 +23,7 @@ public class ReviewAddActivity extends AppCompatActivity {
     SQLiteDatabase db ;
     ImageButton btnBack;
     Button btnConfirm;
-    EditText Name, Info;
+    EditText Name, Info,editNameResult,editInfoResult,editStarResult;
     private RatingBar ratingBar;
     Float Star;
 
@@ -42,6 +42,10 @@ public class ReviewAddActivity extends AppCompatActivity {
 
         ratingBar = findViewById(R.id.review_ratingBar);
 
+        editNameResult = findViewById(R.id.review_name);
+        editStarResult = findViewById(R.id.review_star);
+        editInfoResult = findViewById(R.id.review_info);
+
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
@@ -53,14 +57,28 @@ public class ReviewAddActivity extends AppCompatActivity {
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db = dbHelper.getWritableDatabase();
-                db.execSQL("INSERT INTO reviewTB VALUES (" +
-                        "'" + Name.getText().toString() + "' ,'"
-                        + Star + "' ,'"
-                        + Info.getText().toString()  + "');");
+//                db = dbHelper.getWritableDatabase();
+                db = dbHelper.getReadableDatabase();
+//                db.execSQL("INSERT INTO reviewTB VALUES (" +
+//                        "'" + Name.getText().toString() + "' ,'"
+//                        + Star + "' ,'"
+//                        + Info.getText().toString()  + "');");
+                Cursor cursor = db.rawQuery("select * from reviewTB;",null);
+                String strName = "음식 이름\r\n_____________\r\n";
+                String strStar = "음식 별점\r\n_____________\r\n";
+                String strInfo = "음식 설명\r\n_____________\r\n";
+                while(cursor.moveToNext()){
+                    strName+= cursor.getString(0) + "\r\n";
+                    strStar+=cursor.getInt(1) + "\r\n";
+                    strInfo+=cursor.getInt(2) + "\r\n";
+                }
+                editNameResult.setText(strName);
+                editStarResult.setText(strStar);
+                editInfoResult.setText(strInfo);
+                cursor.close();
                 db.close();
-                Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
-                selectDB();
+//                Toast.makeText(getApplicationContext(),"정상적으로 행이 삽입 되었습니다.",Toast.LENGTH_SHORT).show();
+//                selectDB();
 //                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
 //                startActivity(intent);
 //                finish();
